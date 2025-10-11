@@ -1,0 +1,13 @@
+.tz-animation-wave {
+  animation: 1s cubic-bezier(.01,.36,.01,.99) forwards wave;
+}
+
+@keyframes wave {
+  from {
+    box-shadow: 0 0 0 -8px var(--background-color), 0 0 0 8px var(--text-color);
+  }
+
+  to {
+    box-shadow: 0 0 0 calc(150px - 8px) var(--background-color), 0 0 0 calc(150px - 8px) transparent;
+  }
+}

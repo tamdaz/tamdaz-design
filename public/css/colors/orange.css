@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: light) {
+  body.tz-orange-color {
+    --background-color: #ffedd5; /* Orange 100 */
+    --primary-color: #9a3412; /* Orange 800 */
+    --text-color: #7c2d12; /* Orange 900 */
+    --hover-color: #fed7aa; /* Orange 200 */
+
+    --first-color: #9a3412; /* Orange 800 */
+    --second-color: #7c2d12; /* Orange 900 */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.tz-orange-color {
+    --background-color: #160601; /* Orange 990 */
+    --text-color: #ffedd5; /* Orange 100 */
+    --hover-color: #270f04; /* Orange 975 */
+
+    --first-color: #5f200e; /* Orange 925 */
+    --second-color: #431407; /* Orange 950 */
+  }
+}

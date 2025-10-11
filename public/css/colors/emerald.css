@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: light) {
+  body.tz-emerald-color {
+    --background-color: #d1fae5; /* Emerald 100 */
+    --primary-color: #065f46; /* Emerald 800 */
+    --text-color: #064e3b; /* Emerald 900 */
+    --hover-color: #a7f3d0; /* Emerald 200 */
+
+    --first-color: #065f46; /* Emerald 800 */
+    --second-color: #064e3b; /* Emerald 900 */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.tz-emerald-color {
+    --background-color: #030d0a; /* Emerald 990 */
+    --text-color: #d1fae5; /* Emerald 100 */
+    --hover-color: #071a15; /* Emerald 975 */
+
+    --first-color: #043d2e; /* Emerald 925 */
+    --second-color: #022c22; /* Emerald 950 */
+  }
+}

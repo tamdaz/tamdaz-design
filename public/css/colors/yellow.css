@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: light) {
+  body.tz-yellow-color {
+    --background-color: #fef9c3; /* Yellow 100 */
+    --primary-color: #854d0e; /* Yellow 800 */
+    --text-color: #713f12; /* Yellow 900 */
+    --hover-color: #fef08a; /* Yellow 200 */
+
+    --first-color: #854d0e; /* Yellow 800 */
+    --second-color: #713f12; /* Yellow 900 */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.tz-yellow-color {
+    --background-color: #150901; /* Yellow 990 */
+    --text-color: #fef9c3; /* Yellow 100 */
+    --hover-color: #261404; /* Yellow 975 */
+
+    --first-color: #592f0d; /* Yellow 925 */
+    --second-color: #422006; /* Yellow 950 */
+  }
+}

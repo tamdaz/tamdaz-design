@@ -1,0 +1,14 @@
+.tz-animation-scale-up {
+  display: block;
+  animation: 250ms cubic-bezier(.07,.57,.26,.99) forwards scale_up;
+}
+
+@keyframes scale_up {
+  from {
+    transform: scale(0%);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+}
