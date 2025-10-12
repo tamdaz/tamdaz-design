@@ -35,14 +35,13 @@ const App = () => {
       </pre>
       <br />
       <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "8px" }}>
-        <button onClick={() => changeColor("red")} className="tz-button">Red</button>
+        <button onClick={() => changeColor("ruby")} className="tz-button">Ruby</button>
         <button onClick={() => changeColor("orange")} className="tz-button">Orange</button>
         <button onClick={() => changeColor("yellow")} className="tz-button">Yellow</button>
         <button onClick={() => changeColor("emerald")} className="tz-button">Emerald</button>
         <button onClick={() => changeColor("sky")} className="tz-button">Sky</button>
         <button onClick={() => changeColor("blue")} className="tz-button">Blue</button>
         <button onClick={() => changeColor("purple")} className="tz-button">Purple</button>
-        <button onClick={() => changeColor("rose")} className="tz-button">Rose</button>
         <button onClick={() => changeColor("slate")} className="tz-button">Slate</button>
       </div>
     </div>

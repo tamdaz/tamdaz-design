@@ -6,7 +6,7 @@ export default {
     const [text] = useFixtureInput('Text', "My Button");
 
     const [colorType] = useFixtureSelect('Color', {
-      options: ["red", "orange", "yellow", "emerald", "sky", "blue", "purple", "rose", "slate"]
+      options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
     })
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export default {
     const [text] = useFixtureInput('Text', "My Button");
 
     const [colorType] = useFixtureSelect('Color', {
-      options: ["red", "orange", "yellow", "emerald", "sky", "blue", "purple", "rose", "slate"]
+      options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
     })
 
     useEffect(() => {
@@ -38,7 +38,7 @@ export default {
   },
   "Circle Buttons": () => {
     const [colorType] = useFixtureSelect('Color', {
-      options: ["red", "orange", "yellow", "emerald", "sky", "blue", "purple", "rose", "slate"]
+      options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
     })
 
     useEffect(() => {

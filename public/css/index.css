@@ -5,14 +5,13 @@
 @import "animations/scale-up.css";
 @import "animations/wave.css";
 
-@import "colors/red.css";
+@import "colors/ruby.css";
 @import "colors/orange.css";
 @import "colors/yellow.css";
 @import "colors/emerald.css";
 @import "colors/sky.css";
 @import "colors/blue.css";
 @import "colors/purple.css";
-@import "colors/rose.css";
 @import "colors/slate.css";
 
 @import "components/button.css";

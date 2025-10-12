@@ -6,7 +6,7 @@ import { useFixtureSelect } from 'react-cosmos/client';
  */
 export default () => {
   const [colorType] = useFixtureSelect('Color', {
-    options: ["red", "orange", "yellow", "emerald", "sky", "blue", "purple", "rose", "slate"]
+    options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
   })
 
   useEffect(() => {

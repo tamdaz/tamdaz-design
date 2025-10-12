@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: light) {
+  body.tz-ruby-color {
+    --background-color: #ffe4e6; /* Ruby 100 */
+    --primary-color: #9f1239; /* Ruby 800 */
+    --text-color: #881337; /* Ruby 900 */
+    --hover-color: #fecdd3; /* Ruby 200 */
+
+    --first-color: #9f1239; /* Ruby 800 */
+    --second-color: #881337; /* Ruby 900 */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.tz-ruby-color {
+    --background-color: #180506; /* Ruby 990 */
+    --text-color: #ffe4e6; /* Ruby 100 */
+    --hover-color: #2a0b0f; /* Ruby 975 */
+
+    --first-color: #690b28; /* Ruby 925 */
+    --second-color: #4c0519; /* Ruby 950 */
+  }
+}
