@@ -1,7 +1,7 @@
 /* Typography styles */
 
 .tz-typography {
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   color: var(--text-color);
 }
 
@@ -111,7 +111,8 @@ h6 {
   font-size: 14pt;
   background-color: var(--hover-color);
   border: 2px solid var(--first-color);
-  padding: 2px 8px;
+  padding: 0 4px !important;
+  display: inline-block;
   border-radius: 4px;
 }
 

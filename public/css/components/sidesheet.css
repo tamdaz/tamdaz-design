@@ -46,7 +46,7 @@
 }
 
 .tz-sidesheet-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 18pt;
   font-weight: 700;
   color: var(--text-color);
@@ -80,7 +80,7 @@
 
 .tz-sidesheet-body {
   padding: 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 13pt;
   color: var(--text-color);
   line-height: 1.6;
@@ -126,7 +126,7 @@
 }
 
 .tz-sidesheet-section-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 14pt;
   font-weight: 700;
   color: var(--text-color);

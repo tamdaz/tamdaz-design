@@ -2,7 +2,7 @@
 .tz-grid {
   display: grid;
   gap: 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
 }
 
 /* Grid Columns */

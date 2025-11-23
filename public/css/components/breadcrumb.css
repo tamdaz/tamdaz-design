@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 13pt;
   flex-wrap: wrap;
 }

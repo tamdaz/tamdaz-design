@@ -59,7 +59,7 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 13pt;
   font-weight: 500;
   color: var(--text-color);
@@ -80,7 +80,7 @@
   right: 8px;
   top: 50%;
   transform: translateY(-50%);
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 10pt;
   font-weight: 700;
   color: var(--first-color);

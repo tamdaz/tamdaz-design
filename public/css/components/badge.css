@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 4px 12px;
   border-radius: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 11pt;
   font-weight: 700;
   border: 2px solid var(--first-color);
@@ -50,7 +50,7 @@
   justify-content: center;
   font-size: 9pt;
   font-weight: bold;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
 }
 
 .tz-badge-dot.top-right {

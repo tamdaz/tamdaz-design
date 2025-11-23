@@ -1,7 +1,7 @@
 /* Stepper Container */
 .tz-stepper {
   display: flex;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   position: relative;
 }
 

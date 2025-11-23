@@ -3,7 +3,7 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 13pt;
   color: var(--text-color);
   position: relative;
@@ -77,7 +77,7 @@
 }
 
 .tz-radio-group-label {
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 12pt;
   font-weight: 600;
   color: var(--text-color);
@@ -85,7 +85,7 @@
 }
 
 .tz-radio-group-helper {
-  font-family: "Inter", sans-serif;
+  font-family: "Adwaita Sans", sans-serif;
   font-size: 11pt;
   color: var(--text-color);
   opacity: 0.7;
