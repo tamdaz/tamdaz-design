@@ -34,11 +34,11 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .tz-stepper.vertical .tz-step:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Step Indicator */
@@ -115,8 +115,8 @@
 .tz-stepper.vertical .tz-step-connector {
   width: 4px;
   left: 22px;
-  top: 52px;
-  height: calc(100% - 20px);
+  top: 48px;
+  height: calc(100% + 32px);
 }
 
 .tz-stepper.vertical .tz-step:last-child .tz-step-connector {

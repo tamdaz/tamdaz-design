@@ -1,0 +1,109 @@
+.tz-dropzone {
+  border: 2px dashed var(--first-color);
+  border-radius: 8px;
+  padding: 48px 32px;
+  text-align: center;
+  font-family: "Adwaita Sans", sans-serif;
+  background-color: color-mix(in srgb, var(--first-color) 5%, var(--background-color));
+  transition: all 75ms ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+    border-color: var(--first-color);
+  }
+}
+
+.tz-dropzone.dragover {
+  background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
+  border-color: var(--first-color);
+  border-style: solid;
+  transform: scale(1.02);
+}
+
+.tz-dropzone-icon {
+  font-size: 48pt;
+  color: var(--first-color);
+  margin-bottom: 16px;
+}
+
+.tz-dropzone-title {
+  font-size: 16pt;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 8px 0;
+}
+
+.tz-dropzone-subtitle {
+  font-size: 13pt;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin: 0;
+}
+
+.tz-dropzone-input {
+  display: none;
+}
+
+.tz-dropzone-files {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tz-dropzone-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  border: 1px solid var(--first-color);
+  border-radius: 8px;
+  font-size: 13pt;
+}
+
+.tz-dropzone-file-icon {
+  font-size: 24pt;
+  color: var(--first-color);
+}
+
+.tz-dropzone-file-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tz-dropzone-file-name {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.tz-dropzone-file-size {
+  font-size: 11pt;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.tz-dropzone-file-remove {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 20pt;
+  padding: 4px;
+  transition: all 75ms ease;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:active {
+    background-color: var(--first-color);
+    color: white;
+  }
+}

@@ -134,3 +134,42 @@
   padding-bottom: 8px;
   border-bottom: 2px solid var(--first-color);
 }
+
+/* Variant: Inline sidesheet (pushes content instead of overlay) */
+.tz-sidesheet-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.tz-sidesheet-container .tz-sidesheet-main {
+  flex: 1;
+  overflow-y: auto;
+  transition: margin 300ms ease;
+}
+
+.tz-sidesheet-container .tz-sidesheet {
+  position: relative;
+  width: 0;
+  transform: none;
+  transition: width 300ms ease;
+  overflow: hidden;
+}
+
+.tz-sidesheet-container .tz-sidesheet.open {
+  width: 500px;
+  transform: none;
+}
+
+.tz-sidesheet-container .tz-sidesheet.narrow.open {
+  width: 350px;
+}
+
+.tz-sidesheet-container .tz-sidesheet.wide.open {
+  width: 700px;
+}
+
+.tz-sidesheet-container .tz-sidesheet-overlay {
+  display: none;
+}

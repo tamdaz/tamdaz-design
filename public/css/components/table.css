@@ -1,0 +1,75 @@
+.tz-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--first-color);
+  border-radius: 8px;
+}
+
+.tz-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 13pt;
+  background-color: var(--background-color);
+}
+
+.tz-table thead {
+  background-color: color-mix(in srgb, var(--first-color) 15%, var(--background-color));
+  border-bottom: 2px solid var(--first-color);
+}
+
+.tz-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--first-color);
+}
+
+.tz-table td {
+  padding: 16px;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--first-color);
+}
+
+.tz-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Zebra striping */
+.tz-table.striped tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--first-color) 5%, var(--background-color));
+}
+
+/* Hoverable rows */
+.tz-table.hoverable tbody tr {
+  transition: background-color 75ms ease;
+  cursor: pointer;
+}
+
+.tz-table.hoverable tbody tr:hover {
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+}
+
+/* Compact variant */
+.tz-table.compact th,
+.tz-table.compact td {
+  padding: 8px 12px;
+}
+
+/* Bordered variant */
+.tz-table.bordered td,
+.tz-table.bordered th {
+  border: 1px solid var(--first-color);
+}
+
+/* Alignment utilities */
+.tz-table th.center,
+.tz-table td.center {
+  text-align: center;
+}
+
+.tz-table th.right,
+.tz-table td.right {
+  text-align: right;
+}
