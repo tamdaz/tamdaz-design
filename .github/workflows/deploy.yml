@@ -33,6 +33,21 @@ jobs:
       - name: Build Cosmos
         run: bunx cosmos-export
 
+      - name: Create design system package
+        run: |
+          mkdir -p design-system-package
+          cp -r public/css design-system-package/
+          cp -r public/fonts design-system-package/
+          cd design-system-package
+          zip -r ../tamdaz-design-system.zip css fonts
+
+      - name: Upload design system artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tamdaz-design-system
+          path: tamdaz-design-system.zip
+          retention-days: 90
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
