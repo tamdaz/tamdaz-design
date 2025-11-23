@@ -1,0 +1,390 @@
+/* Container */
+.tz-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tz-container.fluid {
+  max-width: 100%;
+}
+
+.tz-container.sm {
+  max-width: 640px;
+}
+
+.tz-container.md {
+  max-width: 768px;
+}
+
+.tz-container.lg {
+  max-width: 1024px;
+}
+
+.tz-container.xl {
+  max-width: 1280px;
+}
+
+/* Flexbox Layout */
+.tz-flex {
+  display: flex;
+}
+
+.tz-flex.row {
+  flex-direction: row;
+}
+
+.tz-flex.column {
+  flex-direction: column;
+}
+
+.tz-flex.wrap {
+  flex-wrap: wrap;
+}
+
+.tz-flex.nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Justify Content */
+.tz-flex.justify-start {
+  justify-content: flex-start;
+}
+
+.tz-flex.justify-end {
+  justify-content: flex-end;
+}
+
+.tz-flex.justify-center {
+  justify-content: center;
+}
+
+.tz-flex.justify-between {
+  justify-content: space-between;
+}
+
+.tz-flex.justify-around {
+  justify-content: space-around;
+}
+
+.tz-flex.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+.tz-flex.align-start {
+  align-items: flex-start;
+}
+
+.tz-flex.align-end {
+  align-items: flex-end;
+}
+
+.tz-flex.align-center {
+  align-items: center;
+}
+
+.tz-flex.align-baseline {
+  align-items: baseline;
+}
+
+.tz-flex.align-stretch {
+  align-items: stretch;
+}
+
+/* Gap */
+.tz-flex.gap-xs {
+  gap: 8px;
+}
+
+.tz-flex.gap-sm {
+  gap: 12px;
+}
+
+.tz-flex.gap-md {
+  gap: 16px;
+}
+
+.tz-flex.gap-lg {
+  gap: 24px;
+}
+
+.tz-flex.gap-xl {
+  gap: 32px;
+}
+
+/* Stack Layout */
+.tz-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tz-stack.horizontal {
+  flex-direction: row;
+}
+
+.tz-stack.gap-xs {
+  gap: 8px;
+}
+
+.tz-stack.gap-sm {
+  gap: 12px;
+}
+
+.tz-stack.gap-md {
+  gap: 16px;
+}
+
+.tz-stack.gap-lg {
+  gap: 24px;
+}
+
+.tz-stack.gap-xl {
+  gap: 32px;
+}
+
+/* Grid Layout System */
+.tz-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.tz-col {
+  flex: 1;
+  padding: 0 12px;
+}
+
+.tz-col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+  padding: 0 12px;
+}
+
+.tz-col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  padding: 0 12px;
+}
+
+.tz-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 12px;
+}
+
+.tz-col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 0 12px;
+}
+
+.tz-col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  padding: 0 12px;
+}
+
+.tz-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 12px;
+}
+
+.tz-col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  padding: 0 12px;
+}
+
+.tz-col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  padding: 0 12px;
+}
+
+.tz-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding: 0 12px;
+}
+
+.tz-col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  padding: 0 12px;
+}
+
+.tz-col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+  padding: 0 12px;
+}
+
+.tz-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 12px;
+}
+
+/* Spacing Utilities */
+.tz-m-0 {
+  margin: 0;
+}
+
+.tz-m-1 {
+  margin: 8px;
+}
+
+.tz-m-2 {
+  margin: 16px;
+}
+
+.tz-m-3 {
+  margin: 24px;
+}
+
+.tz-m-4 {
+  margin: 32px;
+}
+
+.tz-m-5 {
+  margin: 48px;
+}
+
+.tz-p-0 {
+  padding: 0;
+}
+
+.tz-p-1 {
+  padding: 8px;
+}
+
+.tz-p-2 {
+  padding: 16px;
+}
+
+.tz-p-3 {
+  padding: 24px;
+}
+
+.tz-p-4 {
+  padding: 32px;
+}
+
+.tz-p-5 {
+  padding: 48px;
+}
+
+/* Margin Top/Bottom */
+.tz-mt-0 {
+  margin-top: 0;
+}
+
+.tz-mt-1 {
+  margin-top: 8px;
+}
+
+.tz-mt-2 {
+  margin-top: 16px;
+}
+
+.tz-mt-3 {
+  margin-top: 24px;
+}
+
+.tz-mt-4 {
+  margin-top: 32px;
+}
+
+.tz-mt-5 {
+  margin-top: 48px;
+}
+
+.tz-mb-0 {
+  margin-bottom: 0;
+}
+
+.tz-mb-1 {
+  margin-bottom: 8px;
+}
+
+.tz-mb-2 {
+  margin-bottom: 16px;
+}
+
+.tz-mb-3 {
+  margin-bottom: 24px;
+}
+
+.tz-mb-4 {
+  margin-bottom: 32px;
+}
+
+.tz-mb-5 {
+  margin-bottom: 48px;
+}
+
+/* Section */
+.tz-section {
+  padding: 48px 0;
+}
+
+.tz-section.sm {
+  padding: 24px 0;
+}
+
+.tz-section.lg {
+  padding: 64px 0;
+}
+
+.tz-section.xl {
+  padding: 96px 0;
+}
+
+/* Divider */
+.tz-divider {
+  height: 2px;
+  background-color: var(--first-color);
+  margin: 24px 0;
+  border: none;
+}
+
+.tz-divider.vertical {
+  width: 2px;
+  height: auto;
+  margin: 0 24px;
+}
+
+/* Spacer */
+.tz-spacer {
+  flex: 1;
+}
+
+/* Center Content */
+.tz-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Hide/Show */
+.tz-hide {
+  display: none !important;
+}
+
+.tz-show {
+  display: block !important;
+}
+
+/* Visibility */
+.tz-invisible {
+  visibility: hidden;
+}
+
+.tz-visible {
+  visibility: visible;
+}

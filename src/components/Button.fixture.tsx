@@ -1,19 +1,18 @@
 import { useEffect } from "react";
 import { useFixtureInput, useFixtureSelect } from "react-cosmos/client"
+import useColorSelect from "../hooks/useColors";
 
 export default {
   "Normal Buttons": () => {
     const [text] = useFixtureInput('Text', "My Button");
 
-    const [colorType] = useFixtureSelect('Color', {
-      options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
-    })
+    const colorType = useColorSelect();
 
     useEffect(() => {
       document.body.className = `tz-${colorType}-color`;
     }, [colorType])
 
-    return <div className="tz-center-element" style={{ width: "100%", height: "100%", display: "flex" }}>
+    return <div className="tz-center-element" style={{ width: "100%", height: "100vh", display: "flex" }}>
       <div style={{ display: "flex", gap: 16 }}>
         <button className="tz-button">{text}</button>
       </div>
@@ -30,7 +29,7 @@ export default {
       document.body.className = `tz-${colorType}-color`;
     }, [colorType])
 
-    return <div className="tz-center-element" style={{ width: "100%", height: "100%", display: "flex" }}>
+    return <div className="tz-center-element" style={{ width: "100%", height: "100vh", display: "flex" }}>
       <div style={{ display: "flex", gap: 16 }}>
         <button className="tz-button rounded">{text}</button>
       </div>
@@ -45,7 +44,7 @@ export default {
       document.body.className = `tz-${colorType}-color`;
     }, [colorType])
 
-    return <div className="tz-center-element" style={{ width: "100%", height: "100%", display: "flex" }}>
+    return <div className="tz-center-element" style={{ width: "100%", height: "100vh", display: "flex" }}>
       <button className="tz-button circle">&copy;</button>
     </div>
   }

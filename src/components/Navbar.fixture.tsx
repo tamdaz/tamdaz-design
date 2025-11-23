@@ -1,13 +1,11 @@
 import { useEffect } from 'react';
-import { useFixtureSelect } from 'react-cosmos/client';
+import useColorSelect from '../hooks/useColors';
 
 /**
  * Component that represents the square logo.
  */
 export default () => {
-  const [colorType] = useFixtureSelect('Color', {
-    options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
-  })
+  const colorType = useColorSelect();
 
   useEffect(() => {
     document.body.className = `tz-${colorType}-color`;

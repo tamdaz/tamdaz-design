@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useFixtureInput, useFixtureSelect } from 'react-cosmos/client';
+import useColorSelect from '../hooks/useColors';
 
 /**
  * Component that represents the square logo.
@@ -13,9 +14,7 @@ export default () => {
     options: ["development", "production"]
   })
 
-  const [colorType] = useFixtureSelect('Color', {
-    options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
-  })
+  const colorType = useColorSelect();
 
   useEffect(() => {
     document.body.className = `tz-${colorType}-color`;
@@ -27,7 +26,7 @@ export default () => {
     cssClasses += " " + "stripes";
   }
 
-  return <div className="tz-center-element" style={{ width: "100%", height: "100%", display: "flex" }}>
+  return <div className="tz-center-element" style={{ width: "100%", height: "100vh", display: "flex" }}>
     <div className={cssClasses} style={{ aspectRatio: "1 / 1" }}>
       <pre>
         &nbsp;{subdomain}

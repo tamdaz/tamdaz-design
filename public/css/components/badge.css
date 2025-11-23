@@ -1,0 +1,74 @@
+.tz-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  border: 2px solid var(--first-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.tz-badge.filled {
+  background-color: var(--first-color);
+  color: white;
+}
+
+.tz-badge.outlined {
+  background-color: transparent;
+}
+
+.tz-badge.small {
+  padding: 2px 8px;
+  font-size: 9pt;
+}
+
+.tz-badge.large {
+  padding: 6px 16px;
+  font-size: 12pt;
+}
+
+/* Badge positions for relative parent */
+.tz-badge-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tz-badge-dot {
+  position: absolute;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: white;
+  border: 2px solid var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9pt;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+.tz-badge-dot.top-right {
+  top: -8px;
+  right: -8px;
+}
+
+.tz-badge-dot.top-left {
+  top: -8px;
+  left: -8px;
+}
+
+.tz-badge-dot.bottom-right {
+  bottom: -8px;
+  right: -8px;
+}
+
+.tz-badge-dot.bottom-left {
+  bottom: -8px;
+  left: -8px;
+}

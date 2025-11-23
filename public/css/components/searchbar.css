@@ -1,0 +1,169 @@
+.tz-searchbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.tz-searchbar-input {
+  font-size: 13pt;
+  padding: 12px 48px 12px 48px;
+  border: 2px solid var(--first-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  outline: none;
+  transition: all 75ms ease;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 50px;
+
+  &::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    border-width: 4px;
+    background-color: var(--hover-color);
+    padding: 10px 46px 10px 46px;
+  }
+}
+
+.tz-searchbar-icon {
+  position: absolute;
+  left: 16px;
+  font-size: 18pt;
+  color: var(--text-color);
+  pointer-events: none;
+}
+
+.tz-searchbar-clear {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 18pt;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 75ms ease;
+  opacity: 0;
+  visibility: hidden;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:active {
+    background-color: var(--first-color);
+    color: white;
+  }
+}
+
+.tz-searchbar-input:not(:placeholder-shown) ~ .tz-searchbar-clear {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Variant: Compact searchbar */
+.tz-searchbar.compact .tz-searchbar-input {
+  padding: 8px 40px 8px 40px;
+  font-size: 12pt;
+}
+
+.tz-searchbar.compact .tz-searchbar-input:focus {
+  padding: 6px 38px 6px 38px;
+}
+
+.tz-searchbar.compact .tz-searchbar-icon {
+  left: 12px;
+  font-size: 16pt;
+}
+
+.tz-searchbar.compact .tz-searchbar-clear {
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  font-size: 16pt;
+}
+
+/* Variant: With border */
+.tz-searchbar.bordered .tz-searchbar-input {
+  border-radius: 0;
+}
+
+/* In navbar context */
+.tz-navbar .tz-searchbar {
+  max-width: 400px;
+}
+
+/* Search results dropdown */
+.tz-searchbar-results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+  border: 2px solid var(--first-color);
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 75ms ease, transform 75ms ease, visibility 75ms;
+}
+
+.tz-searchbar-results.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.tz-searchbar-result-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 13pt;
+  font-family: "Inter", sans-serif;
+  transition: background-color 75ms ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:active {
+    background-color: var(--first-color);
+    color: white;
+  }
+}
+
+.tz-searchbar-result-icon {
+  font-size: 16pt;
+  flex-shrink: 0;
+}
+
+.tz-searchbar-no-results {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-family: "Inter", sans-serif;
+  font-size: 13pt;
+}

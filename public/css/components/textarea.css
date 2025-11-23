@@ -1,0 +1,51 @@
+.tz-textarea {
+  font-size: 13pt;
+  padding: 16px;
+  border: 2px solid var(--first-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  outline: none;
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  resize: vertical;
+
+  &::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    border-width: 4px;
+    background-color: var(--hover-color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.tz-textarea.no-resize {
+  resize: none;
+}
+
+.tz-textarea.auto-resize {
+  resize: none;
+  overflow: hidden;
+}
+
+.tz-textarea.error {
+  border-color: #dc2626;
+}
+
+.tz-textarea.error:focus {
+  border-width: 4px;
+  padding: 10px 22px;
+}

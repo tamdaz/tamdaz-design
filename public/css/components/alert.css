@@ -1,0 +1,151 @@
+.tz-alert {
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 24px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13pt;
+
+  border: 2px solid var(--first-color);
+  border-radius: 8px;
+  
+  color: var(--text-color);
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color) 90%);
+}
+
+.tz-alert-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+  line-height: 1;
+
+  user-select: none;
+}
+
+.tz-alert-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tz-alert-title {
+  font-weight: 700;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 18pt;
+  line-height: 1.2;
+}
+
+.tz-alert-message {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.5;
+}
+
+.tz-alert-content ul {
+  margin: 8px 0 0 0;
+  padding: 0 0 0 16px;
+  list-style-type: disc;
+}
+
+.tz-alert-content li {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.tz-alert-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 18pt;
+  font-weight: bold;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: all 75ms ease;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+.tz-alert.filled {
+  background-color: var(--first-color);
+  color: white;
+  border-color: var(--first-color);
+}
+
+.tz-alert.filled .tz-alert-close {
+  color: white;
+}
+
+.tz-alert.filled .tz-alert-close:hover {
+  background-color: var(--second-color);
+}
+
+.tz-alert.outlined {
+  background-color: transparent;
+  border-width: 2px;
+}
+
+.tz-alert.bordered {
+  border-left-width: 4px;
+  border-radius: 4px;
+}
+
+.tz-alert.success {
+  border-color: #065f46;
+  color: #064e3b;
+  background-color: color-mix(in srgb, #065f46 10%, #d1fae5 90%);
+}
+
+.tz-alert.success.filled {
+  background-color: #065f46;
+  color: white;
+}
+
+.tz-alert.warning {
+  border-color: #854d0e;
+  color: #854d0e;
+  background-color: color-mix(in srgb, #854d0e 10%, #fef9c3 90%);
+}
+
+.tz-alert.warning.filled {
+  background-color: #854d0e;
+  color: white;
+}
+
+.tz-alert.error {
+  border-color: #9f1239;
+  color: #9f1239;
+  background-color: color-mix(in srgb, #9f1239 10%, #ffe4e6 90%);
+}
+
+.tz-alert.error.filled {
+  background-color: #9f1239;
+  color: white;
+}
+
+.tz-alert.dismissing {
+  animation: alert-slide-out 300ms ease forwards;
+}
+
+@keyframes alert-slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

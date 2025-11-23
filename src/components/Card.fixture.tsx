@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { useFixtureInput, useFixtureSelect } from 'react-cosmos/client';
+import { useFixtureInput } from 'react-cosmos/client';
+import useColorSelect from '../hooks/useColors';
 
 /**
  * Component that represents the card.
@@ -12,15 +13,13 @@ export default () => {
   //   options: ["development", "production"]
   // })
 
-  const [colorType] = useFixtureSelect('Color', {
-    options: ["ruby", "orange", "yellow", "emerald", "sky", "blue", "purple", "slate"]
-  })
+  const colorType = useColorSelect();
 
   useEffect(() => {
     document.body.className = `tz-${colorType}-color`;
   }, [colorType])
 
-  return <div className="tz-center-element" style={{ width: "100%", height: "100%", display: "flex" }}>
+  return <div className="tz-center-element" style={{ width: "100%", height: "100vh", display: "flex" }}>
     <div className="tz-card">
       <span className="tz-label">Label</span>
       <div style={{ aspectRatio: "16 / 9", position: "relative", userSelect: "none" }}>
