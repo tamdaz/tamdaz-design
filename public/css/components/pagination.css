@@ -1,0 +1,85 @@
+.tz-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 13pt;
+}
+
+.tz-pagination-button {
+  min-width: 40px;
+  height: 40px;
+  padding: 8px 12px;
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  color: var(--text-color);
+  border: 1px solid var(--first-color);
+  border-radius: 50%;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 13pt;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 75ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover:not(:disabled) {
+    background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
+  }
+
+  &:active:not(:disabled) {
+    background-color: var(--first-color);
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.tz-pagination-button.active {
+  background-color: var(--first-color);
+  color: white;
+}
+
+.tz-pagination-nav {
+  min-width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  color: var(--text-color);
+  border: 1px solid var(--first-color);
+  border-radius: 50%;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 16pt;
+  cursor: pointer;
+  transition: all 75ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover:not(:disabled) {
+    background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
+  }
+
+  &:active:not(:disabled) {
+    background-color: var(--first-color);
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.tz-pagination-ellipsis {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-weight: 600;
+}

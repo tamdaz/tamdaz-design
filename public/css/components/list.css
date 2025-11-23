@@ -1,0 +1,259 @@
+/* List Container */
+.tz-list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  font-family: "Adwaita Sans", sans-serif;
+}
+
+/* List Item */
+.tz-list-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+  border-bottom: 1px solid var(--hover-color);
+  cursor: pointer;
+}
+
+.tz-list-item:hover {
+  background-color: var(--hover-color);
+}
+
+.tz-list-item:active {
+  background-color: var(--first-color);
+  color: white;
+}
+
+.tz-list-item.selected {
+  background-color: var(--first-color);
+  color: white;
+}
+
+.tz-list-item:last-child {
+  border-bottom: none;
+}
+
+/* List Item Icon */
+.tz-list-item-icon {
+  font-size: 20pt;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* List Item Avatar */
+.tz-list-item-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  background-color: var(--first-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14pt;
+}
+
+/* List Item Content */
+.tz-list-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.tz-list-item-primary {
+  font-size: 13pt;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tz-list-item.selected .tz-list-item-primary {
+  color: white;
+}
+
+.tz-list-item-secondary {
+  font-size: 11pt;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tz-list-item.selected .tz-list-item-secondary {
+  color: white;
+  opacity: 0.9;
+}
+
+/* List Item Actions */
+.tz-list-item-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tz-list-item-action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 18pt;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.tz-list-item-action:hover {
+  background-color: var(--hover-color);
+}
+
+.tz-list-item.selected .tz-list-item-action {
+  color: white;
+}
+
+.tz-list-item.selected .tz-list-item-action:hover {
+  background-color: var(--second-color);
+}
+
+/* List Item Meta */
+.tz-list-item-meta {
+  font-size: 11pt;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tz-list-item.selected .tz-list-item-meta {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Compact List */
+.tz-list.compact .tz-list-item {
+  padding: 8px 12px;
+  gap: 12px;
+}
+
+.tz-list.compact .tz-list-item-icon,
+.tz-list.compact .tz-list-item-avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 16pt;
+}
+
+/* Bordered List */
+.tz-list.bordered {
+  border: 2px solid var(--first-color);
+}
+
+.tz-list.bordered .tz-list-item {
+  border-bottom: 1px solid var(--first-color);
+}
+
+/* List with Dividers */
+.tz-list-divider {
+  height: 1px;
+  background-color: var(--first-color);
+  margin: 8px 16px;
+}
+
+/* List Header */
+.tz-list-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+  background-color: var(--hover-color);
+  font-weight: 700;
+  font-size: 13pt;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--first-color);
+}
+
+.tz-list-header-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.tz-list-header-cell:hover {
+  color: var(--first-color);
+}
+
+.tz-list-header-icon {
+  font-size: 14pt;
+  flex-shrink: 0;
+}
+
+/* Checkbox List */
+.tz-list-item-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--first-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tz-list-item-checkbox:hover {
+  border-color: var(--second-color);
+  background-color: var(--hover-color);
+}
+
+.tz-list-item-checkbox.checked {
+  background-color: var(--first-color);
+  border-color: var(--first-color);
+}
+
+.tz-list-item-checkbox.checked::after {
+  content: "✓";
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* Draggable List */
+.tz-list-item.draggable {
+  cursor: move;
+}
+
+.tz-list-item.dragging {
+  opacity: 0.5;
+}
+
+/* Empty List State */
+.tz-list-empty {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+.tz-list-empty-icon {
+  font-size: 48pt;
+  margin-bottom: 16px;
+  opacity: 0.4;
+}
+
+.tz-list-empty-text {
+  font-size: 13pt;
+  font-weight: 500;
+}

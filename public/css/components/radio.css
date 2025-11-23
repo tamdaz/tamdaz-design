@@ -1,0 +1,124 @@
+.tz-radio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 13pt;
+  color: var(--text-color);
+  position: relative;
+}
+
+.tz-radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.tz-radio-circle {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--first-color);
+  border-radius: 50%;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 75ms ease;
+  flex-shrink: 0;
+}
+
+.tz-radio:hover .tz-radio-circle {
+  background-color: var(--hover-color);
+}
+
+.tz-radio-input:checked + .tz-radio-circle {
+  border-width: 2px;
+  background-color: var(--first-color);
+}
+
+.tz-radio-input:checked + .tz-radio-circle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+}
+
+.tz-radio-input:focus + .tz-radio-circle {
+  box-shadow: 0 0 0 3px var(--first-color);
+}
+
+.tz-radio-input:disabled + .tz-radio-circle {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tz-radio-input:disabled ~ .tz-radio-label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tz-radio-label {
+  font-weight: 500;
+  user-select: none;
+}
+
+/* Radio group */
+.tz-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tz-radio-group.horizontal {
+  flex-direction: row;
+  gap: 24px;
+}
+
+.tz-radio-group-label {
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.tz-radio-group-helper {
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 11pt;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+/* Variant: With description */
+.tz-radio.with-description {
+  align-items: flex-start;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 75ms ease;
+}
+
+.tz-radio.with-description:hover {
+  background-color: var(--hover-color);
+  border-color: var(--first-color);
+}
+
+.tz-radio.with-description .tz-radio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tz-radio.with-description .tz-radio-description {
+  font-size: 11pt;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.tz-radio-input:checked ~ .tz-radio.with-description {
+  background-color: var(--hover-color);
+  border-color: var(--first-color);
+}

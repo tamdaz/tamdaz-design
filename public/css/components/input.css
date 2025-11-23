@@ -1,0 +1,74 @@
+.tz-input {
+  font-size: 13pt;
+  padding: 12px 24px;
+  border: 2px solid var(--first-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Adwaita Sans", sans-serif;
+  font-weight: 500;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+
+  &:focus {
+    border-width: 4px;
+    background-color: var(--hover-color);
+    padding: 10px 22px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.tz-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.tz-input-label {
+  font-size: 12pt;
+  font-weight: 600;
+  color: var(--text-color);
+  font-family: "Adwaita Sans", sans-serif;
+}
+
+.tz-input-helper {
+  font-size: 11pt;
+  color: var(--text-color);
+  font-family: "Adwaita Sans", sans-serif;
+}
+
+.tz-input-helper.top {
+  order: -1;
+}
+
+.tz-input.error {
+  border-color: #dc2626;
+}
+
+.tz-input.error:focus {
+  border-width: 4px;
+  padding: 10px 22px;
+}
+
+.tz-input-group .tz-input-helper.error {
+  color: #dc2626;
+  opacity: 1;
+}
+
+.tz-input.rounded {
+  border-radius: 50px;
+}

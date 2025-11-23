@@ -1,0 +1,184 @@
+/* Progress Bar */
+.tz-progress {
+  width: 100%;
+  height: 8px;
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tz-progress-bar {
+  height: 100%;
+  background-color: var(--first-color);
+  border-radius: 4px;
+  transition: width 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated progress bar */
+.tz-progress-bar.animated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: progress-shimmer 1.5s infinite;
+}
+
+@keyframes progress-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Indeterminate linear progress with dashed pattern */
+.tz-progress.indeterminate {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--first-color),
+    var(--first-color) 20px,
+    color-mix(in srgb, var(--first-color) 30%, var(--background-color)) 20px,
+    color-mix(in srgb, var(--first-color) 30%, var(--background-color)) 40px
+  );
+  background-size: 200% 100%;
+  animation: progress-indeterminate-slide 1.5s linear infinite;
+}
+
+@keyframes progress-indeterminate-slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+/* Progress bar with label */
+.tz-progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Adwaita Sans", sans-serif;
+}
+
+.tz-progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13pt;
+  color: var(--text-color);
+}
+
+.tz-progress-label-text {
+  font-weight: 600;
+}
+
+.tz-progress-label-value {
+  font-weight: 700;
+  color: var(--first-color);
+}
+
+/* Size variants */
+.tz-progress.small {
+  height: 4px;
+}
+
+.tz-progress.medium {
+  height: 8px;
+}
+
+.tz-progress.large {
+  height: 12px;
+}
+
+/* Circular Progress */
+.tz-progress-circular {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tz-progress-circular svg {
+  transform: rotate(-90deg);
+}
+
+.tz-progress-circular-bg {
+  fill: none;
+  stroke: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  stroke-width: 8;
+}
+
+.tz-progress-circular-bar {
+  fill: none;
+  stroke: var(--first-color);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 300ms ease;
+}
+
+.tz-progress-circular-label {
+  position: absolute;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 16pt;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Indeterminate circular progress */
+.tz-progress-circular.indeterminate svg {
+  animation: progress-circular-rotate 1.4s linear infinite;
+}
+
+.tz-progress-circular.indeterminate .tz-progress-circular-bar {
+  stroke-dasharray: 60, 200;
+  stroke-dashoffset: 0;
+}
+
+@keyframes progress-circular-rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+/* Size variants for circular */
+.tz-progress-circular.small {
+  width: 32px;
+  height: 32px;
+}
+
+.tz-progress-circular.small .tz-progress-circular-label {
+  display: none;
+}
+
+.tz-progress-circular.medium {
+  width: 64px;
+  height: 64px;
+}
+
+.tz-progress-circular.medium .tz-progress-circular-label {
+  font-size: 13pt;
+}
+
+.tz-progress-circular.large {
+  width: 96px;
+  height: 96px;
+}
+
+.tz-progress-circular.large .tz-progress-circular-label {
+  font-size: 18pt;
+}

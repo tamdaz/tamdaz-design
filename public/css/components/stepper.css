@@ -1,0 +1,239 @@
+/* Stepper Container */
+.tz-stepper {
+  display: flex;
+  font-family: "Adwaita Sans", sans-serif;
+  position: relative;
+}
+
+.tz-stepper.horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.tz-stepper.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+/* Step Item */
+.tz-step {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.tz-stepper.horizontal .tz-step {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tz-stepper.vertical .tz-step {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 32px;
+}
+
+.tz-stepper.vertical .tz-step:last-child {
+  padding-bottom: 0;
+}
+
+/* Step Indicator */
+.tz-step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tz-stepper.horizontal .tz-step-indicator {
+  width: 100%;
+}
+
+.tz-stepper.vertical .tz-step-indicator {
+  flex-shrink: 0;
+}
+
+/* Step Circle */
+.tz-step-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 4px solid var(--first-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16pt;
+  position: relative;
+  z-index: 2;
+  transition: all 75ms ease;
+}
+
+.tz-step.active .tz-step-circle {
+  background-color: var(--first-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.tz-step.completed .tz-step-circle {
+  background-color: var(--first-color);
+  color: white;
+  border-color: var(--first-color);
+}
+
+.tz-step.disabled .tz-step-circle {
+  border-color: var(--first-color);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Step Connector Line */
+.tz-step-connector {
+  position: absolute;
+  background-color: var(--first-color);
+  transition: all 75ms ease;
+  z-index: 0;
+}
+
+.tz-stepper.horizontal .tz-step-connector {
+  height: 4px;
+  top: 22px;
+  left: calc(50% + 24px);
+  width: calc(100% - 48px);
+}
+
+.tz-stepper.horizontal .tz-step:last-child .tz-step-connector {
+  display: none;
+}
+
+.tz-stepper.vertical .tz-step-connector {
+  width: 4px;
+  left: 22px;
+  top: 48px;
+  height: calc(100% + 32px);
+}
+
+.tz-stepper.vertical .tz-step:last-child .tz-step-connector {
+  display: none;
+}
+
+.tz-step.completed .tz-step-connector {
+  background-color: var(--first-color);
+}
+
+.tz-step.active .tz-step-connector {
+  background-color: var(--first-color);
+}
+
+.tz-step.disabled .tz-step-connector {
+  background-color: var(--hover-color);
+  opacity: 0.5;
+}
+
+/* Step Content */
+.tz-step-content {
+  padding-top: 16px;
+}
+
+.tz-stepper.vertical .tz-step-content {
+  padding-top: 0;
+  flex: 1;
+}
+
+.tz-step-label {
+  font-weight: 600;
+  font-size: 13pt;
+  color: var(--text-color);
+  margin-bottom: 4px;
+  transition: all 75ms ease;
+}
+
+.tz-step.active .tz-step-label {
+  color: var(--first-color);
+  font-weight: 700;
+}
+
+.tz-step.disabled .tz-step-label {
+  opacity: 0.5;
+}
+
+.tz-step-description {
+  font-size: 11pt;
+  color: var(--text-color);
+  opacity: 0.7;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.tz-step.active .tz-step-description {
+  opacity: 1;
+}
+
+/* Step Icon */
+.tz-step-icon {
+  font-size: 20pt;
+}
+
+/* Animation for step transitions */
+.tz-step-content {
+  animation: step-fade-in 75ms ease;
+}
+
+@keyframes step-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tz-stepper.vertical .tz-step-content {
+  animation: step-fade-in-vertical 75ms ease;
+}
+
+@keyframes step-fade-in-vertical {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clickable steps */
+.tz-step.clickable {
+  cursor: pointer;
+}
+
+.tz-step.clickable:hover .tz-step-circle {
+  transform: scale(1.05);
+  border-width: 5px;
+}
+
+.tz-step.clickable:hover .tz-step-label {
+  color: var(--first-color);
+}
+
+.tz-step.clickable.disabled {
+  cursor: not-allowed;
+}
+
+.tz-step.clickable.disabled:hover .tz-step-circle {
+  transform: scale(1);
+  border-width: 4px;
+}
+
+.tz-step.clickable.disabled:hover .tz-step-label {
+  color: var(--text-color);
+}

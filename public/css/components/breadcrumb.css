@@ -1,0 +1,64 @@
+.tz-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 13pt;
+  flex-wrap: wrap;
+}
+
+.tz-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 75ms ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: var(--hover-color);
+    font-weight: 600;
+  }
+
+  &:active {
+    background-color: var(--first-color);
+    color: white;
+  }
+}
+
+.tz-breadcrumb-item.current {
+  font-weight: 700;
+  pointer-events: none;
+  color: var(--first-color);
+}
+
+.tz-breadcrumb-separator {
+  color: var(--text-color);
+  opacity: 0.5;
+  font-size: 11pt;
+  user-select: none;
+}
+
+/* Variant: With background */
+.tz-breadcrumb.with-background {
+  background-color: var(--background-color);
+  border: 2px solid var(--first-color);
+  padding: 12px 16px;
+}
+
+/* Variant: Compact */
+.tz-breadcrumb.compact {
+  font-size: 11pt;
+}
+
+.tz-breadcrumb.compact .tz-breadcrumb-item {
+  padding: 4px 8px;
+}
+
+/* Breadcrumb with icons */
+.tz-breadcrumb-icon {
+  font-size: 14pt;
+  line-height: 1;
+}

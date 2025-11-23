@@ -1,0 +1,85 @@
+.tz-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 2px solid var(--first-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: default;
+  transition: all 75ms ease;
+}
+
+.tz-chip:hover {
+  background-color: var(--hover-color);
+}
+
+.tz-chip.clickable {
+  cursor: pointer;
+}
+
+.tz-chip.clickable:active {
+  background-color: var(--first-color);
+  color: white;
+}
+
+.tz-chip-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 75ms ease;
+  margin-left: 4px;
+  margin-right: -4px;
+
+  &:hover {
+    background-color: var(--first-color);
+    color: white;
+  }
+}
+
+.tz-chip-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-left: -4px;
+}
+
+.tz-chip.outlined {
+  background-color: transparent;
+}
+
+.tz-chip.filled {
+  background-color: var(--first-color);
+  color: white;
+  border-color: var(--first-color);
+}
+
+.tz-chip.filled .tz-chip-close {
+  color: white;
+}
+
+.tz-chip.filled:hover {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+}

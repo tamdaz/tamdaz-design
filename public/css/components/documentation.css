@@ -1,0 +1,67 @@
+/* Documentation styles */
+
+.tz-doc {
+  font-family: "Adwaita Sans", sans-serif;
+  color: var(--text-color);
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tz-doc h1 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.tz-doc p {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.tz-doc h2 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.tz-doc h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tz-doc ul {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.tz-doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.tz-doc-table thead tr {
+  border-bottom: 2px solid var(--first-color);
+}
+
+.tz-doc-table th {
+  text-align: left;
+  padding: 12px 8px;
+  font-weight: 600;
+}
+
+.tz-doc-table td {
+  padding: 12px 8px;
+}
+
+.tz-doc-table tbody tr {
+  border-bottom: 1px solid var(--first-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .tz-doc-table tbody tr {
+    border-bottom: 1px solid var(--first-color);
+  }
+}

@@ -1,0 +1,135 @@
+.tz-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tz-tooltip-content {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px 16px;
+  background-color: var(--first-color);
+  color: white;
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 11pt;
+  font-weight: 500;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 75ms ease, transform 75ms ease;
+  pointer-events: none;
+}
+
+.tz-tooltip:hover .tz-tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Top position */
+.tz-tooltip-content.top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+}
+
+.tz-tooltip:hover .tz-tooltip-content.top {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tz-tooltip-content.top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--first-color) transparent transparent transparent;
+}
+
+/* Bottom position */
+.tz-tooltip-content.bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.tz-tooltip:hover .tz-tooltip-content.bottom {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tz-tooltip-content.bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent var(--first-color) transparent;
+}
+
+/* Left position */
+.tz-tooltip-content.left {
+  top: 50%;
+  right: calc(100% + 8px);
+  transform: translateY(-50%) translateX(4px);
+}
+
+.tz-tooltip:hover .tz-tooltip-content.left {
+  transform: translateY(-50%) translateX(0);
+}
+
+.tz-tooltip-content.left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--first-color);
+}
+
+/* Right position */
+.tz-tooltip-content.right {
+  top: 50%;
+  left: calc(100% + 8px);
+  transform: translateY(-50%) translateX(-4px);
+}
+
+.tz-tooltip:hover .tz-tooltip-content.right {
+  transform: translateY(-50%) translateX(0);
+}
+
+.tz-tooltip-content.right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent var(--first-color) transparent transparent;
+}
+
+/* Variant with dark background */
+.tz-tooltip-content.dark {
+  background-color: var(--second-color);
+}
+
+.tz-tooltip-content.dark.top::after {
+  border-color: var(--second-color) transparent transparent transparent;
+}
+
+.tz-tooltip-content.dark.bottom::after {
+  border-color: transparent transparent var(--second-color) transparent;
+}
+
+.tz-tooltip-content.dark.left::after {
+  border-color: transparent transparent transparent var(--second-color);
+}
+
+.tz-tooltip-content.dark.right::after {
+  border-color: transparent var(--second-color) transparent transparent;
+}

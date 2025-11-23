@@ -1,0 +1,106 @@
+.tz-snackbar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  max-width: 500px;
+  padding: 16px 24px;
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  color: var(--text-color);
+  border: 2px solid var(--first-color);
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 14pt;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 100;
+  animation: snackbar-slide-in 300ms ease;
+}
+
+.tz-snackbar-message {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.tz-snackbar-action {
+  background: none;
+  border: none;
+  color: var(--first-color);
+  font-family: "Adwaita Sans", sans-serif;
+  font-size: 14pt;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 75ms ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+/* Removed color variants - using theme colors instead */
+
+/* Position variants */
+.tz-snackbar.top {
+  bottom: auto;
+  top: 24px;
+  animation: snackbar-slide-in-top 300ms ease;
+}
+
+.tz-snackbar.left {
+  left: 24px;
+  transform: none;
+}
+
+.tz-snackbar.right {
+  left: auto;
+  right: 24px;
+  transform: none;
+}
+
+/* Animations */
+@keyframes snackbar-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes snackbar-slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.tz-snackbar.dismissing {
+  animation: snackbar-slide-out 300ms ease forwards;
+}
+
+@keyframes snackbar-slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(100px);
+  }
+}

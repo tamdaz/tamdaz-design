@@ -9,7 +9,7 @@ const App = () => {
     document.body.className = `tz-${color}-color`;
   }
 
-  return <div className="tz-align-horizontal tz-center-element" style={{ height: "100%", gap: "4rem" }}>
+  return <div className="tz-align-horizontal tz-center-element" style={{ height: "100vh", gap: "4rem" }}>
     <div className="tz-animation-scale-up">
       <div className="tz-square-logo tz-animation-wave" style={{ width: 256, height: 256 }}>
         <pre style={{ padding: 8 }}>
