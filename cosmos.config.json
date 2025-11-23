@@ -3,6 +3,6 @@
     "react-cosmos-plugin-vite"
   ],
   "globalImports": [
-    "src/css/index.css"
+    "/src/css/index.css"
   ]
 }
