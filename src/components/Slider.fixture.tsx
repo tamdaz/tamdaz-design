@@ -3,6 +3,61 @@ import { useFixtureInput } from "react-cosmos/client";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    const colorType = useColorSelect();
+
+    useEffect(() => {
+      document.body.className = `tz-${colorType}-color`;
+    }, [colorType]);
+
+    return (
+      <div className="tz-doc">
+        <h1>Slider Component</h1>
+        <p>
+          Les sliders permettent aux utilisateurs de sélectionner une valeur dans une plage en déplaçant un curseur.
+        </p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-slider</code></td>
+              <td>Classe de base pour le slider</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+
+        <h3>Slider basique</h3>
+        <pre className="tz-code-block">{`<input type="range" class="tz-slider" min="0" max="100" value="50">`}</pre>
+
+        <h3>Slider avec label</h3>
+        <pre className="tz-code-block">{`<div class="tz-input-group">
+  <label class="tz-input-label">Volume: 75%</label>
+  <input type="range" class="tz-slider" min="0" max="100" value="75">
+</div>`}</pre>
+
+        <h3>Slider avec min/max personnalisés</h3>
+        <pre className="tz-code-block">{`<input type="range" class="tz-slider" min="-10" max="10" step="0.5" value="0">`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Utilisez les attributs <code className="tz-code">min</code>, <code className="tz-code">max</code>, et <code className="tz-code">step</code> pour contrôler la plage</li>
+          <li>Affichez toujours la valeur actuelle pour l'utilisateur</li>
+          <li>Le slider s'adapte à la couleur primaire du thème</li>
+          <li>Compatible avec tous les navigateurs modernes</li>
+        </ul>
+      </div>
+    );
+  },
+
   "Basic Slider": () => {
     const [value, setValue] = useState(50);
     const colorType = useColorSelect();

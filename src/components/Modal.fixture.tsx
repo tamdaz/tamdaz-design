@@ -2,6 +2,109 @@ import { useEffect, useState } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    const colorType = useColorSelect();
+
+    useEffect(() => {
+      document.body.className = `tz-${colorType}-color`;
+    }, [colorType]);
+
+    return (
+      <div className="tz-doc">
+        <h1>Modal Component</h1>
+        <p>
+          Les modales affichent du contenu dans une fenêtre superposée qui nécessite une interaction de l'utilisateur. 
+          Elles bloquent l'interaction avec le reste de la page jusqu'à ce qu'elles soient fermées.
+        </p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-modal-overlay</code></td>
+              <td>Fond sombre derrière la modale</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-modal</code></td>
+              <td>Conteneur principal de la modale</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-modal-header</code></td>
+              <td>En-tête avec titre et bouton fermer</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-modal-title</code></td>
+              <td>Titre de la modale</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-modal-body</code></td>
+              <td>Contenu principal</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-modal-footer</code></td>
+              <td>Pied de page avec actions</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-modal-close</code></td>
+              <td>Bouton de fermeture</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.open</code></td>
+              <td>État ouvert (sur overlay)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+
+        <h3>Modale basique</h3>
+        <pre className="tz-code-block">{`<div class="tz-modal-overlay open">
+  <div class="tz-modal">
+    <div class="tz-modal-header">
+      <h2 class="tz-modal-title">Modal Title</h2>
+      <button class="tz-modal-close">×</button>
+    </div>
+    <div class="tz-modal-body">
+      <p>Modal content goes here.</p>
+    </div>
+  </div>
+</div>`}</pre>
+
+        <h3>Modale avec footer</h3>
+        <pre className="tz-code-block">{`<div class="tz-modal-overlay open">
+  <div class="tz-modal">
+    <div class="tz-modal-header">
+      <h2 class="tz-modal-title">Confirm Action</h2>
+      <button class="tz-modal-close">×</button>
+    </div>
+    <div class="tz-modal-body">
+      <p>Are you sure you want to proceed?</p>
+    </div>
+    <div class="tz-modal-footer">
+      <button class="tz-button">Cancel</button>
+      <button class="tz-button">Confirm</button>
+    </div>
+  </div>
+</div>`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Ajoutez la classe <code className="tz-code">.open</code> sur l'overlay pour afficher la modale</li>
+          <li>Cliquer sur l'overlay ferme la modale (géré par JavaScript)</li>
+          <li>Utilisez <code className="tz-code">e.stopPropagation()</code> sur la modale pour éviter la fermeture</li>
+          <li>La modale est centrée et responsive</li>
+          <li>L'overlay bloque le défilement de la page</li>
+        </ul>
+      </div>
+    );
+  },
+
   "Basic Modal": () => {
     const [isOpen, setIsOpen] = useState(false);
     const colorType = useColorSelect();

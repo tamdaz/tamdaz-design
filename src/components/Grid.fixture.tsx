@@ -2,6 +2,80 @@ import { useEffect, useState } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    return (
+      <div className="tz-doc">
+        <h1>Grid</h1>
+        <p>Le composant Grid permet d'afficher des éléments sous forme de grille avec des cartes interactives.</p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-grid</code></td>
+              <td>Conteneur de la grille</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.cols-2</code></td>
+              <td>Grille à 2 colonnes</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.cols-3</code></td>
+              <td>Grille à 3 colonnes</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.cols-4</code></td>
+              <td>Grille à 4 colonnes</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-grid-item</code></td>
+              <td>Élément de grille (carte)</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-grid-item-icon</code></td>
+              <td>Icône de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-grid-item-title</code></td>
+              <td>Titre de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-grid-item-subtitle</code></td>
+              <td>Sous-titre de l'élément</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+        <pre className="tz-code-block">{`<div class="tz-grid cols-3">
+  <div class="tz-grid-item">
+    <span class="tz-grid-item-icon material-symbols-outlined">folder</span>
+    <div class="tz-grid-item-title">Documents</div>
+    <div class="tz-grid-item-subtitle">23 files</div>
+  </div>
+  <div class="tz-grid-item">
+    <span class="tz-grid-item-icon material-symbols-outlined">image</span>
+    <div class="tz-grid-item-title">Photos</div>
+    <div class="tz-grid-item-subtitle">156 files</div>
+  </div>
+</div>`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Utilisez <code className="tz-code">.cols-2</code>, <code className="tz-code">.cols-3</code> ou <code className="tz-code">.cols-4</code> pour définir le nombre de colonnes</li>
+          <li>Les éléments de grille sont cliquables et réagissent au survol</li>
+          <li>Utilisez des icônes Material Symbols pour un rendu cohérent</li>
+          <li>Responsive : s'adapte automatiquement sur mobile</li>
+        </ul>
+      </div>
+    );
+  },
   "Basic Grid": () => {
     const colorType = useColorSelect();
 

@@ -2,6 +2,100 @@ import { useEffect } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    const colorType = useColorSelect();
+
+    useEffect(() => {
+      document.body.className = `tz-${colorType}-color`;
+    }, [colorType]);
+
+    return (
+      <div className="tz-doc">
+        <h1>Breadcrumb Component</h1>
+        <p>
+          Les breadcrumbs (fils d'Ariane) affichent le chemin de navigation actuel de l'utilisateur 
+          et permettent de revenir facilement aux pages précédentes.
+        </p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-breadcrumb</code></td>
+              <td>Conteneur principal du breadcrumb</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-breadcrumb-item</code></td>
+              <td>Élément individuel du breadcrumb</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-breadcrumb-separator</code></td>
+              <td>Séparateur entre les éléments</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.current</code></td>
+              <td>Page actuelle (non cliquable)</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.with-background</code></td>
+              <td>Breadcrumb avec fond et bordure</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+
+        <h3>Breadcrumb basique</h3>
+        <pre className="tz-code-block">{`<nav class="tz-breadcrumb">
+  <a href="/" class="tz-breadcrumb-item">Home</a>
+  <span class="tz-breadcrumb-separator">/</span>
+  <a href="/category" class="tz-breadcrumb-item">Category</a>
+  <span class="tz-breadcrumb-separator">/</span>
+  <span class="tz-breadcrumb-item current">Current Page</span>
+</nav>`}</pre>
+
+        <h3>Breadcrumb avec fond</h3>
+        <pre className="tz-code-block">{`<nav class="tz-breadcrumb with-background">
+  <a href="/" class="tz-breadcrumb-item">Home</a>
+  <span class="tz-breadcrumb-separator">/</span>
+  <a href="/category" class="tz-breadcrumb-item">Category</a>
+  <span class="tz-breadcrumb-separator">/</span>
+  <span class="tz-breadcrumb-item current">Current Page</span>
+</nav>`}</pre>
+
+        <h3>Breadcrumb avec icônes</h3>
+        <pre className="tz-code-block">{`<nav class="tz-breadcrumb">
+  <a href="/" class="tz-breadcrumb-item">
+    <span class="material-symbols-outlined">home</span>
+    Home
+  </a>
+  <span class="tz-breadcrumb-separator">/</span>
+  <a href="/docs" class="tz-breadcrumb-item">
+    <span class="material-symbols-outlined">description</span>
+    Docs
+  </a>
+  <span class="tz-breadcrumb-separator">/</span>
+  <span class="tz-breadcrumb-item current">Guide</span>
+</nav>`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Utilisez <code className="tz-code">&lt;nav&gt;</code> comme conteneur pour l'accessibilité</li>
+          <li>La classe <code className="tz-code">.current</code> désactive le pointeur sur la page actuelle</li>
+          <li>Les séparateurs peuvent être personnalisés (/, ›, →, etc.)</li>
+          <li>Le breadcrumb est responsive et s'adapte automatiquement</li>
+          <li>Chaque élément a un effet hover pour améliorer l'UX</li>
+        </ul>
+      </div>
+    );
+  },
+
   "Basic Breadcrumb": () => {
     const colorType = useColorSelect();
 

@@ -2,6 +2,92 @@ import { useEffect, useState } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    const colorType = useColorSelect();
+
+    useEffect(() => {
+      document.body.className = `tz-${colorType}-color`;
+    }, [colorType]);
+
+    return (
+      <div className="tz-doc">
+        <h1>Radio Component</h1>
+        <p>
+          Les boutons radio permettent aux utilisateurs de sélectionner une seule option parmi plusieurs choix.
+        </p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-radio-group</code></td>
+              <td>Conteneur pour un groupe de radios</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-radio</code></td>
+              <td>Conteneur d'un radio individuel</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-radio-input</code></td>
+              <td>Input radio caché</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-radio-circle</code></td>
+              <td>Cercle visuel du radio</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-radio-label</code></td>
+              <td>Label du radio</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+
+        <h3>Groupe de radios</h3>
+        <pre className="tz-code-block">{`<div class="tz-radio-group">
+  <label class="tz-radio">
+    <input type="radio" class="tz-radio-input" name="options" value="1" checked>
+    <span class="tz-radio-circle"></span>
+    <span class="tz-radio-label">Option 1</span>
+  </label>
+  <label class="tz-radio">
+    <input type="radio" class="tz-radio-input" name="options" value="2">
+    <span class="tz-radio-circle"></span>
+    <span class="tz-radio-label">Option 2</span>
+  </label>
+  <label class="tz-radio">
+    <input type="radio" class="tz-radio-input" name="options" value="3">
+    <span class="tz-radio-circle"></span>
+    <span class="tz-radio-label">Option 3</span>
+  </label>
+</div>`}</pre>
+
+        <h3>Radio désactivé</h3>
+        <pre className="tz-code-block">{`<label class="tz-radio">
+  <input type="radio" class="tz-radio-input" name="test" disabled>
+  <span class="tz-radio-circle"></span>
+  <span class="tz-radio-label">Disabled option</span>
+</label>`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Tous les radios d'un groupe doivent avoir le même <code className="tz-code">name</code></li>
+          <li>Utilisez l'attribut <code className="tz-code">checked</code> pour sélectionner une option par défaut</li>
+          <li>Le groupe s'affiche en colonne par défaut</li>
+          <li>Les radios ont un effet focus pour l'accessibilité</li>
+          <li>Minimum 2 options, maximum 6-7 options recommandé</li>
+        </ul>
+      </div>
+    );
+  },
+
   "Basic Radio Buttons": () => {
     const [selected, setSelected] = useState("option1");
     const colorType = useColorSelect();

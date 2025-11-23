@@ -2,6 +2,101 @@ import { useEffect } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    const colorType = useColorSelect();
+
+    useEffect(() => {
+      document.body.className = `tz-${colorType}-color`;
+    }, [colorType]);
+
+    return (
+      <div className="tz-doc">
+        <h1>Tooltip Component</h1>
+        <p>
+          Les tooltips affichent des informations complémentaires au survol d'un élément. 
+          Ils sont utiles pour fournir du contexte sans encombrer l'interface.
+        </p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-tooltip</code></td>
+              <td>Conteneur du tooltip</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-tooltip-content</code></td>
+              <td>Contenu du tooltip</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Positions</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.top</code></td>
+              <td>Au-dessus de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.bottom</code></td>
+              <td>En dessous de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.left</code></td>
+              <td>À gauche de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.right</code></td>
+              <td>À droite de l'élément</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+
+        <h3>Tooltip en haut</h3>
+        <pre className="tz-code-block">{`<div class="tz-tooltip">
+  <button class="tz-button">Hover me</button>
+  <span class="tz-tooltip-content top">Tooltip on top</span>
+</div>`}</pre>
+
+        <h3>Tooltip en bas</h3>
+        <pre className="tz-code-block">{`<div class="tz-tooltip">
+  <button class="tz-button">Hover me</button>
+  <span class="tz-tooltip-content bottom">Tooltip on bottom</span>
+</div>`}</pre>
+
+        <h3>Tooltip sur une icône</h3>
+        <pre className="tz-code-block">{`<div class="tz-tooltip">
+  <span class="material-symbols-outlined">info</span>
+  <span class="tz-tooltip-content top">More information</span>
+</div>`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Le tooltip apparaît au survol via <code className="tz-code">:hover</code></li>
+          <li>Gardez le texte court (maximum 1-2 lignes)</li>
+          <li>Évitez d'utiliser des tooltips sur mobile</li>
+          <li>Ne mettez pas d'informations critiques dans un tooltip</li>
+          <li>Le tooltip a un léger délai d'apparition pour une meilleure UX</li>
+        </ul>
+      </div>
+    );
+  },
+
   "Tooltip Top": () => {
     const colorType = useColorSelect();
 

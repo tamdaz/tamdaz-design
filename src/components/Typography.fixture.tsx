@@ -2,6 +2,147 @@ import { useEffect } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    const colorType = useColorSelect();
+
+    useEffect(() => {
+      document.body.className = `tz-${colorType}-color`;
+    }, [colorType]);
+
+    return (
+      <div className="tz-doc">
+        <h1>Typography System</h1>
+        <p>
+          Le système typographique définit les styles de texte utilisés dans le design system. 
+          Il utilise la police Adwaita Sans pour une cohérence visuelle.
+        </p>
+
+        <h2>Classes de titres</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Taille</th>
+              <th>Utilisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">h1</code></td>
+              <td>60px</td>
+              <td>Titre principal de page</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">h2</code></td>
+              <td>48px</td>
+              <td>Titre de section principale</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">h3</code></td>
+              <td>36px</td>
+              <td>Titre de sous-section</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">h4</code></td>
+              <td>28px</td>
+              <td>Titre de groupe</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">h5</code></td>
+              <td>20px</td>
+              <td>Titre secondaire</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">h6</code></td>
+              <td>16px</td>
+              <td>Titre tertiaire</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Classes de corps de texte</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Taille</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-body-large</code></td>
+              <td>18pt</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-body</code></td>
+              <td>16pt</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-body-small</code></td>
+              <td>14pt</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-caption</code></td>
+              <td>12pt</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-lead</code></td>
+              <td>20pt - Texte d'introduction</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Classes utilitaires</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-text-bold</code></td>
+              <td>Texte en gras (700)</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-text-semibold</code></td>
+              <td>Texte semi-gras (600)</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-text-center</code></td>
+              <td>Texte centré</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-code</code></td>
+              <td>Code inline</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-code-block</code></td>
+              <td>Bloc de code</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-link</code></td>
+              <td>Lien stylisé</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-mono</code></td>
+              <td>Police monospace</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Tous les textes utilisent la police Adwaita Sans</li>
+          <li>Le code utilise Adwaita Mono</li>
+          <li>Respectez la hiérarchie des titres pour l'accessibilité</li>
+          <li>Les tailles sont définies en pixels pour les titres et en points pour le corps</li>
+        </ul>
+      </div>
+    );
+  },
+
   "Headings Hierarchy": () => {
     const colorType = useColorSelect();
 

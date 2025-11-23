@@ -2,6 +2,78 @@ import { useEffect, useState } from "react";
 import useColorSelect from "../hooks/useColors";
 
 export default {
+  "📖 Documentation": () => {
+    return (
+      <div className="tz-doc">
+        <h1>List</h1>
+        <p>Le composant List permet d'afficher des éléments sous forme de liste avec icône, contenu et métadonnées.</p>
+
+        <h2>Classes CSS</h2>
+        <table className="tz-doc-table">
+          <thead>
+            <tr>
+              <th>Classe</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code className="tz-code">.tz-list</code></td>
+              <td>Conteneur de la liste</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.bordered</code></td>
+              <td>Ajoute une bordure autour de la liste</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-list-item</code></td>
+              <td>Élément de liste</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-list-item-icon</code></td>
+              <td>Icône de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-list-item-content</code></td>
+              <td>Conteneur du texte principal</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-list-item-primary</code></td>
+              <td>Texte principal de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-list-item-secondary</code></td>
+              <td>Texte secondaire de l'élément</td>
+            </tr>
+            <tr>
+              <td><code className="tz-code">.tz-list-item-meta</code></td>
+              <td>Métadonnées (date, heure, etc.)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Exemples de code HTML</h2>
+        <pre className="tz-code-block">{`<div class="tz-list bordered">
+  <div class="tz-list-item">
+    <span class="tz-list-item-icon material-symbols-outlined">folder</span>
+    <div class="tz-list-item-content">
+      <div class="tz-list-item-primary">Documents</div>
+      <div class="tz-list-item-secondary">23 files</div>
+    </div>
+    <div class="tz-list-item-meta">2 hours ago</div>
+  </div>
+</div>`}</pre>
+
+        <h2>Notes d'utilisation</h2>
+        <ul>
+          <li>Les éléments de liste sont cliquables</li>
+          <li>Utilisez <code className="tz-code">.bordered</code> pour ajouter une bordure</li>
+          <li>L'icône est optionnelle</li>
+          <li>Les métadonnées sont affichées à droite</li>
+        </ul>
+      </div>
+    );
+  },
   "Basic List": () => {
     const colorType = useColorSelect();
 
