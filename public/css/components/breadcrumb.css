@@ -16,16 +16,16 @@
   transition: all 75ms ease;
   padding: 8px 12px;
   border-radius: 4px;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-    font-weight: 600;
-  }
+.tz-breadcrumb-item:hover {
+  background-color: var(--hover-color);
+  font-weight: 600;
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-breadcrumb-item:active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-breadcrumb-item.current {

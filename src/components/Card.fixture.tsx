@@ -12,13 +12,13 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Card Component</h1>
+        <h1>Les cartes <i>(Cards)</i></h1>
         <p>
           Les cartes regroupent du contenu et des actions sur un seul sujet. 
           Elles sont idéales pour afficher des aperçus ou des éléments dans une grille.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -38,7 +38,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Carte avec image</h3>
         <pre className="tz-code-block">{`<div class="tz-card">

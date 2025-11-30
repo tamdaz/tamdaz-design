@@ -9,11 +9,11 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+}
 
-  &:hover {
-    background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
-    border-color: var(--first-color);
-  }
+.tz-dropzone:hover {
+  background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
+  border-color: var(--first-color);
 }
 
 .tz-dropzone.dragover {
@@ -97,13 +97,13 @@
   padding: 4px;
   transition: all 75ms ease;
   border-radius: 4px;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-dropzone-file-remove:hover {
+  background-color: var(--hover-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-dropzone-file-remove:active {
+  background-color: var(--first-color);
+  color: white;
 }

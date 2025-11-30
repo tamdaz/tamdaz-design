@@ -4,25 +4,21 @@
   transition: 50ms;
   cursor: pointer;
   position: relative;
+}
 
-  &:hover {
-    box-shadow: 16px 16px 0 var(--first-color);
-  }
+.tz-card:hover {
+  box-shadow: 16px 16px 0 var(--first-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: var(--hover-color);
-  }
+.tz-card:active {
+  background-color: var(--first-color);
+  color: var(--hover-color);
 }
 
 @media (prefers-color-scheme: dark) {
   .tz-card:active {
     color: var(--text-color);
   }
-}
-
-.tz-card > div:last-child {
-  padding: 16px 24px;
 }
 
 .tz-card > div:last-child {
@@ -49,7 +45,6 @@
   border-radius: 50px;
   min-width: 64px;
   text-align: center;
-
   background-color: var(--first-color);
   color: var(--hover-color);
 }

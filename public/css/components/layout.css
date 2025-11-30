@@ -93,26 +93,7 @@
   align-items: stretch;
 }
 
-/* Gap */
-.tz-flex.gap-xs {
-  gap: 8px;
-}
-
-.tz-flex.gap-sm {
-  gap: 12px;
-}
-
-.tz-flex.gap-md {
-  gap: 16px;
-}
-
-.tz-flex.gap-lg {
-  gap: 24px;
-}
-
-.tz-flex.gap-xl {
-  gap: 32px;
-}
+/* Gap (defined below with stack variants) */
 
 /* Stack Layout */
 .tz-stack {
@@ -125,25 +106,11 @@
   flex-direction: row;
 }
 
-.tz-stack.gap-xs {
-  gap: 8px;
-}
-
-.tz-stack.gap-sm {
-  gap: 12px;
-}
-
-.tz-stack.gap-md {
-  gap: 16px;
-}
-
-.tz-stack.gap-lg {
-  gap: 24px;
-}
-
-.tz-stack.gap-xl {
-  gap: 32px;
-}
+.tz-stack.gap-xs, .tz-flex.gap-xs { gap: 8px; }
+.tz-stack.gap-sm, .tz-flex.gap-sm { gap: 12px; }
+.tz-stack.gap-md, .tz-flex.gap-md { gap: 16px; }
+.tz-stack.gap-lg, .tz-flex.gap-lg { gap: 24px; }
+.tz-stack.gap-xl, .tz-flex.gap-xl { gap: 32px; }
 
 /* Grid Layout System */
 .tz-row {

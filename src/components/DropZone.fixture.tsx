@@ -6,9 +6,9 @@ export default {
     return (
       <div className="tz-doc">
         <h1>Drop Zone</h1>
-        <p>Le composant Drop Zone permet aux utilisateurs de glisser-déposer des fichiers ou de cliquer pour les sélectionner.</p>
+        <p>Le Drop Zone permet aux utilisateurs de glisser-déposer des fichiers ou de cliquer pour les sélectionner.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -52,7 +52,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-dropzone">
   <span class="tz-dropzone-icon material-symbols-outlined">upload_file</span>
   <h3 class="tz-dropzone-title">Drop files here</h3>

@@ -11,13 +11,13 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Breadcrumb Component</h1>
+        <h1>Les fils d'Ariane <i>(Breadcrumb)</i></h1>
         <p>
-          Les breadcrumbs (fils d'Ariane) affichent le chemin de navigation actuel de l'utilisateur 
+          Les fils d'Ariane affichent le chemin de navigation actuel de l'utilisateur 
           et permettent de revenir facilement aux pages précédentes.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -49,7 +49,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Breadcrumb basique</h3>
         <pre className="tz-code-block">{`<nav class="tz-breadcrumb">

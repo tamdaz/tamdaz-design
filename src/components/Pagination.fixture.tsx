@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Pagination</h1>
-        <p>Le composant Pagination permet de naviguer entre plusieurs pages avec des boutons circulaires et des contrôles de navigation.</p>
+        <h1>Les paginations</h1>
+        <p>Les paginations permettent de naviguer entre plusieurs pages avec des boutons circulaires et des contrôles de navigation.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -40,7 +40,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-pagination">
   <button class="tz-pagination-nav" aria-label="First page">
     <span class="material-symbols-outlined">first_page</span>

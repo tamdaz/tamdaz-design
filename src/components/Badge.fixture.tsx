@@ -11,9 +11,7 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>
-          Badge Component
-        </h1>
+        <h1>Les badges</h1>
         <p>
           Les badges affichent des informations courtes comme des statuts, des compteurs ou des labels. 
           Ils peuvent être utilisés seuls ou positionnés sur d'autres éléments.

@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Stepper</h1>
-        <p>Le composant Stepper affiche une progression étape par étape avec des indicateurs visuels.</p>
+        <h1>Les étapes <i>(Steppers)</i></h1>
+        <p>Les étapes affichent une progression avec des indicateurs visuels.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -68,7 +68,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-stepper horizontal">
   <div class="tz-step completed">
     <div class="tz-step-indicator">

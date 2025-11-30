@@ -182,15 +182,15 @@ h6 {
   text-decoration: underline;
   cursor: pointer;
   transition: all 75ms ease;
+}
 
-  &:hover {
-    color: var(--second-color);
-    font-weight: 600;
-  }
+.tz-link:hover {
+  color: var(--second-color);
+  font-weight: 600;
+}
 
-  &:active {
-    text-decoration: none;
-  }
+.tz-link:active {
+  text-decoration: none;
 }
 
 /* Display text (extra large) */

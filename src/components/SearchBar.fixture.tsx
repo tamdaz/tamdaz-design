@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Search Bar</h1>
-        <p>Le composant Search Bar permet de créer une barre de recherche avec icône et bouton d'effacement.</p>
+        <h1>Les barres de recherche</h1>
+        <p>Les barres de recherche permettent <i>(comme son nom l'indique)</i> de rechercher des informations plus facilement.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -36,7 +36,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-searchbar">
   <span class="tz-searchbar-icon">🔍</span>
   <input 

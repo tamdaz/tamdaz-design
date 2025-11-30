@@ -44,11 +44,11 @@
   transition: all 75ms ease;
   margin-left: 4px;
   margin-right: -4px;
+}
 
-  &:hover {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-chip-close:hover {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-chip-avatar {

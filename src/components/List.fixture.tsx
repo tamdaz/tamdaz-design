@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>List</h1>
-        <p>Le composant List permet d'afficher des éléments sous forme de liste avec icône, contenu et métadonnées.</p>
+        <h1>Les listes</h1>
+        <p>Les listes permet d'afficher une icône, contenu et métadonnées pour chaque ligne.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -52,7 +52,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-list bordered">
   <div class="tz-list-item">
     <span class="tz-list-item-icon material-symbols-outlined">folder</span>

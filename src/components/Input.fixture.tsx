@@ -12,13 +12,10 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>
-          Input Component
-        </h1>
+        <h1>Les champs de texte</h1>
         <p>
-          Les champs de saisie permettent aux utilisateurs d'entrer du texte et d'autres données dans un formulaire.
+          Les champs de texte permettent aux utilisateurs d'entrer du texte et d'autres données dans un formulaire.
         </p>
-
         <h2>
           Classes CSS
         </h2>

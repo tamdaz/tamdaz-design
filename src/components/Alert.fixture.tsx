@@ -11,13 +11,12 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Alert Component</h1>
+        <h1>Les alertes</h1>
         <p>
-          Les alertes affichent des messages importants à l'utilisateur. Elles peuvent être utilisées pour 
-          afficher des informations, des avertissements, des erreurs ou des confirmations de succès.
+          Les alertes permettent d'afficher des messages importants à l'utilisateur. Elles peuvent être soient sous forme
+          d'informations, d'avertissements, d'erreurs ou de succès.
         </p>
-
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -53,7 +52,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Variantes</h2>
+        <h2>Les variantes</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -89,7 +88,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Alerte simple</h3>
         <pre className="tz-code-block">{`<div class="tz-alert">

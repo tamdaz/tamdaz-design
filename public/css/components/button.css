@@ -1,23 +1,20 @@
 .tz-button {
   font-size: 13pt;
   padding: 12px 32px;
-
   border: 2px solid var(--first-color);
   background-color: var(--background-color);
-
   font-weight: 600;
   cursor: pointer;
-
   color: var(--text-color);
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-button:hover {
+  background-color: var(--hover-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-button:active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-button.rounded {

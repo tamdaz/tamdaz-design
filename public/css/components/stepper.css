@@ -76,14 +76,16 @@
 }
 
 .tz-step.active .tz-step-circle {
-  background-color: var(--first-color);
-  color: white;
   transform: scale(1.1);
 }
 
-.tz-step.completed .tz-step-circle {
+.tz-step.completed .tz-step-circle,
+.tz-step.active .tz-step-circle {
   background-color: var(--first-color);
   color: white;
+}
+
+.tz-step.completed .tz-step-circle {
   border-color: var(--first-color);
 }
 
@@ -123,10 +125,7 @@
   display: none;
 }
 
-.tz-step.completed .tz-step-connector {
-  background-color: var(--first-color);
-}
-
+.tz-step.completed .tz-step-connector,
 .tz-step.active .tz-step-connector {
   background-color: var(--first-color);
 }

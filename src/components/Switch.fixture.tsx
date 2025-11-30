@@ -12,13 +12,10 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Switch Component</h1>
-        <p>
-          Les switches permettent d'activer ou de désactiver une option unique. 
-          Ils fournissent un retour visuel immédiat sur l'état actuel.
-        </p>
+        <h1>Les interrupteurs <i>(Switchs)</i></h1>
+        <p>Les interrupteurs permettent d'activer ou de désactiver une option unique. </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -42,7 +39,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Switch basique</h3>
         <pre className="tz-code-block">{`<label class="tz-switch">

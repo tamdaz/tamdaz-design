@@ -6,10 +6,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Logo</h1>
-        <p>Le composant Logo affiche un logo carré avec du texte personnalisable et un curseur clignotant.</p>
+        <h1>Les logos</h1>
+        <p>Les logos carées du texte personnalisable et un curseur clignotant.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -33,7 +33,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-square-logo" style="aspect-ratio: 1 / 1">
   <pre>
     &nbsp;design

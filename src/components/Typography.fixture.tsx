@@ -11,10 +11,10 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Typography System</h1>
+        <h1>Le système typographique</h1>
         <p>
-          Le système typographique définit les styles de texte utilisés dans le design system. 
-          Il utilise la police Adwaita Sans pour une cohérence visuelle.
+          Le système typographique définit les styles de texte utilisés dans le système de design.
+          Il utilise la police Adwaita Sans pour une cohérence visuelle et Adwaita Mono pour visualiser le code.
         </p>
 
         <h2>Classes de titres</h2>

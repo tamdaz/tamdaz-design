@@ -37,14 +37,14 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 75ms ease;
+}
 
-  &:hover {
-    opacity: 0.8;
-  }
+.tz-snackbar-action:hover {
+  opacity: 0.8;
+}
 
-  &:active {
-    opacity: 0.6;
-  }
+.tz-snackbar-action:active {
+  opacity: 0.6;
 }
 
 /* Removed color variants - using theme colors instead */

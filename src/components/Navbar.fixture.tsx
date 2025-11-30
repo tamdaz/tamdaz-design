@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Navbar</h1>
-        <p>Le composant Navbar affiche une barre de navigation verticale latérale avec des éléments de menu.</p>
+        <h1>La barre de navigation <i>(Navbars)</i></h1>
+        <p>La barre de navigation verticale latérale avec des éléments de menu.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -32,7 +32,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-application">
   <nav class="tz-navbar">
     <div style="padding: 16px; padding-bottom: 32px;">

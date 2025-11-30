@@ -17,7 +17,7 @@ export default {
           l'utilisateur d'une action ou d'un événement. Ils disparaissent automatiquement après quelques secondes.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -97,7 +97,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Snackbar simple</h3>
         <pre className="tz-code-block">{`<div class="tz-snackbar">

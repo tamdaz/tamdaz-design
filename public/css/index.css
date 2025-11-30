@@ -12,6 +12,9 @@
 @import "colors/purple.css";
 @import "colors/slate.css";
 
+/* // Voici les couleurs définies pour mon design */
+
+@import "components/accordion.css";
 @import "components/button.css";
 @import "components/card.css";
 @import "components/logo.css";
@@ -25,6 +28,7 @@
 @import "components/tooltip.css";
 @import "components/badge.css";
 @import "components/modal.css";
+@import "components/menu.css";
 @import "components/alert.css";
 @import "components/snackbar.css";
 @import "components/breadcrumb.css";
@@ -39,6 +43,7 @@
 @import "components/pagination.css";
 @import "components/dropzone.css";
 @import "components/table.css";
+@import "components/table-of-contents.css";
 @import "components/progress.css";
 @import "components/layout.css";
 
@@ -100,7 +105,13 @@ body {
   color: var(--text-color);
 
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+
+@supports (scrollbar-width: auto) {
+  * {
+    scrollbar-color: var(--secondary-color) var(--first-color);
+  }
 }
 
 #root {

@@ -59,9 +59,3 @@
 .tz-doc-table tbody tr {
   border-bottom: 1px solid var(--first-color);
 }
-
-@media (prefers-color-scheme: dark) {
-  .tz-doc-table tbody tr {
-    border-bottom: 1px solid var(--first-color);
-  }
-}

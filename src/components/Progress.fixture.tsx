@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Progress</h1>
-        <p>Les composants Progress affichent la progression d'une tâche sous forme de barre linéaire ou circulaire.</p>
+        <h1>Les progressions <i>(Progress)</i></h1>
+        <p>Les progressions représentent sous forme de barre linéaire ou circulaire.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -60,7 +60,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<!-- Barre simple -->
 <div class="tz-progress">
   <div class="tz-progress-bar" style="width: 60%"></div>

@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Table</h1>
-        <p>Le composant Table affiche des données tabulaires avec support du style zébré, survol et différentes variantes.</p>
+        <h1>Les tableaux <i>(Tables)</i></h1>
+        <p>Les tableaux affichent des données avec support du style zébré, survol et différentes variantes.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -52,7 +52,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-table-container">
   <table class="tz-table striped hoverable">
     <thead>
