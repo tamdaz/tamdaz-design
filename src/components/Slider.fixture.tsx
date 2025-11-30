@@ -12,9 +12,9 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Les interrupteurs <i>(Sliders)</i></h1>
+        <h1>Les curseurs <i>(Sliders)</i></h1>
         <p>
-          Les interrupteurs permettent aux utilisateurs d'activer ou de désactiver un paramètre.
+          Les curseurs permettent aux utilisateurs de sélectionner une valeur dans une plage en déplaçant un curseur.
         </p>
 
         <h2>Les classes CSS</h2>

@@ -6,7 +6,7 @@ export default {
     return (
       <div className="tz-doc">
         <h1>Les progressions <i>(Progress)</i></h1>
-        <p>Les progressions représentent sous forme de barre linéaire ou circulaire.</p>
+        <p>Les progressions affichent l'avancement d'une tâche sous forme de barre linéaire ou circulaire.</p>
 
         <h2>Les classes CSS</h2>
         <table className="tz-doc-table">

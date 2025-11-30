@@ -6,7 +6,7 @@ export default {
     return (
       <div className="tz-doc">
         <h1>La barre de navigation <i>(Navbars)</i></h1>
-        <p>La barre de navigation verticale latérale avec des éléments de menu.</p>
+        <p>La barre de navigation affiche des éléments de menu de manière verticale.</p>
 
         <h2>Les classes CSS</h2>
         <table className="tz-doc-table">

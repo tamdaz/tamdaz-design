@@ -7,7 +7,7 @@ export default {
     return (
       <div className="tz-doc">
         <h1>Les logos</h1>
-        <p>Les logos carées du texte personnalisable et un curseur clignotant.</p>
+        <p>Les logos carrés du texte personnalisable et un curseur clignotant.</p>
 
         <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
