@@ -11,13 +11,13 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Tooltip Component</h1>
+        <h1>Les tooltips</h1>
         <p>
           Les tooltips affichent des informations complémentaires au survol d'un élément. 
           Ils sont utiles pour fournir du contexte sans encombrer l'interface.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -65,7 +65,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Tooltip en haut</h3>
         <pre className="tz-code-block">{`<div class="tz-tooltip">

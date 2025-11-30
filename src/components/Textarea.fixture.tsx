@@ -14,11 +14,11 @@ export default {
       <div className="tz-doc">
         <h1>Textarea Component</h1>
         <p>
-          Les textareas permettent aux utilisateurs d'entrer du texte sur plusieurs lignes, 
+          Les champs de texte à ligne multiples permettent aux utilisateurs d'entrer du texte sur plusieurs lignes, 
           idéal pour les commentaires, descriptions ou messages longs.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -46,7 +46,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Textarea basique</h3>
         <pre className="tz-code-block">{`<textarea class="tz-textarea" placeholder="Enter your message..."></textarea>`}</pre>

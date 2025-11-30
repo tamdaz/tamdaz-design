@@ -11,12 +11,12 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Radio Component</h1>
+        <h1>Les boutons radio</h1>
         <p>
           Les boutons radio permettent aux utilisateurs de sélectionner une seule option parmi plusieurs choix.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -48,7 +48,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Groupe de radios</h3>
         <pre className="tz-code-block">{`<div class="tz-radio-group">

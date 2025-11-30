@@ -11,13 +11,13 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Dropdown Component</h1>
+        <h1>Les listes déroulantes <i>(Dropdowns)</i></h1>
         <p>
           Les dropdowns affichent une liste d'options lorsqu'ils sont activés. 
           Ils sont utiles pour les sélections dans un espace limité.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -49,7 +49,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Dropdown basique</h3>
         <pre className="tz-code-block">{`<div class="tz-dropdown open">

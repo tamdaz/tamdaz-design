@@ -11,13 +11,13 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Modal Component</h1>
+        <h1>Les dialogues <i>(Modals)</i></h1>
         <p>
           Les modales affichent du contenu dans une fenêtre superposée qui nécessite une interaction de l'utilisateur. 
           Elles bloquent l'interaction avec le reste de la page jusqu'à ce qu'elles soient fermées.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -61,7 +61,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Modale basique</h3>
         <pre className="tz-code-block">{`<div class="tz-modal-overlay open">

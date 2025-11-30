@@ -19,21 +19,21 @@
   width: 100%;
   box-sizing: border-box;
   border-radius: 50px;
+}
 
-  &::placeholder {
-    color: var(--text-color);
-    opacity: 0.5;
-  }
+.tz-searchbar-input::placeholder {
+  color: var(--text-color);
+  opacity: 0.5;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-searchbar-input:hover {
+  background-color: var(--hover-color);
+}
 
-  &:focus {
-    border-width: 4px;
-    background-color: var(--hover-color);
-    padding: 10px 46px 10px 46px;
-  }
+.tz-searchbar-input:focus {
+  border-width: 4px;
+  background-color: var(--hover-color);
+  padding: 10px 46px 10px 46px;
 }
 
 .tz-searchbar-icon {
@@ -61,15 +61,15 @@
   transition: all 75ms ease;
   opacity: 0;
   visibility: hidden;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-searchbar-clear:hover {
+  background-color: var(--hover-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-searchbar-clear:active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-searchbar-input:not(:placeholder-shown) ~ .tz-searchbar-clear {
@@ -143,15 +143,15 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-searchbar-result-item:hover {
+  background-color: var(--hover-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-searchbar-result-item:active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-searchbar-result-icon {

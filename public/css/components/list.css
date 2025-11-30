@@ -45,6 +45,16 @@
   height: 40px;
 }
 
+/* White color for icon when selected or active */
+.tz-list-item.selected .tz-list-item-icon,
+.tz-list-item:active .tz-list-item-icon {
+  color: white;
+}
+
+.tz-list-item:active .tz-list-item-action * {
+  color: white !important;
+}
+
 /* List Item Avatar */
 .tz-list-item-avatar {
   width: 40px;
@@ -59,6 +69,13 @@
   color: white;
   font-weight: 600;
   font-size: 14pt;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.tz-list-item.selected .tz-list-item-avatar,
+.tz-list-item:active .tz-list-item-avatar {
+  border-color: white;
 }
 
 /* List Item Content */
@@ -83,7 +100,7 @@
 }
 
 .tz-list-item-secondary {
-  font-size: 11pt;
+  font-size: 12pt;
   opacity: 0.7;
   white-space: nowrap;
   overflow: hidden;
@@ -101,13 +118,20 @@
   gap: 8px;
   align-items: center;
   flex-shrink: 0;
+  color: var(--text-color);
+}
+
+/* White color for actions container when selected */
+.tz-list-item.selected .tz-list-item-actions,
+.tz-list-item.selected:hover .tz-list-item-actions {
+  color: white;
 }
 
 .tz-list-item-action {
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--text-color);
+  color: inherit;
   font-size: 18pt;
   width: 32px;
   height: 32px;
@@ -121,12 +145,21 @@
   background-color: var(--hover-color);
 }
 
-.tz-list-item.selected .tz-list-item-action {
-  color: white;
+/* White color for actions when selected */
+.tz-list-item.selected .tz-list-item-action,
+.tz-list-item.selected:hover .tz-list-item-action {
+  color: white !important;
 }
 
 .tz-list-item.selected .tz-list-item-action:hover {
   background-color: var(--second-color);
+}
+
+/* White color for action children when selected */
+.tz-list-item.selected .tz-list-item-action *,
+.tz-list-item.selected:hover .tz-list-item-action *,
+.tz-list-item.selected .tz-list-item-action:hover * {
+  color: white !important;
 }
 
 /* List Item Meta */

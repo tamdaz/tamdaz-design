@@ -12,12 +12,12 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Slider Component</h1>
+        <h1>Les curseurs <i>(Sliders)</i></h1>
         <p>
-          Les sliders permettent aux utilisateurs de sélectionner une valeur dans une plage en déplaçant un curseur.
+          Les curseurs permettent aux utilisateurs de sélectionner une valeur dans une plage en déplaçant un curseur.
         </p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -33,7 +33,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Slider basique</h3>
         <pre className="tz-code-block">{`<input type="range" class="tz-slider" min="0" max="100" value="50">`}</pre>

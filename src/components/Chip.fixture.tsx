@@ -11,13 +11,12 @@ export default {
 
     return (
       <div className="tz-doc">
-        <h1>Chip Component</h1>
+        <h1>Les chips</h1>
         <p>
           Les chips sont des éléments compacts qui représentent des entrées, des attributs ou des actions. 
           Ils peuvent être supprimés, cliqués ou simplement affichés.
         </p>
-
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -49,7 +48,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
 
         <h3>Chip basique</h3>
         <pre className="tz-code-block">{`<span class="tz-chip">Default Chip</span>`}</pre>

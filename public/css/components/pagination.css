@@ -13,7 +13,7 @@
   background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
   color: var(--text-color);
   border: 1px solid var(--first-color);
-  border-radius: 50%;
+  border-radius: 8px;
   font-family: "Adwaita Sans", sans-serif;
   font-size: 13pt;
   font-weight: 600;
@@ -22,20 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  &:hover:not(:disabled) {
-    background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
-  }
-
-  &:active:not(:disabled) {
-    background-color: var(--first-color);
-    color: white;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
+.tz-pagination-button:hover:not(:disabled),
+.tz-pagination-nav:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
 }
 
 .tz-pagination-button.active {
@@ -50,7 +41,7 @@
   background-color: color-mix(in srgb, var(--first-color) 10%, var(--background-color));
   color: var(--text-color);
   border: 1px solid var(--first-color);
-  border-radius: 50%;
+  border-radius: 8px;
   font-family: "Adwaita Sans", sans-serif;
   font-size: 16pt;
   cursor: pointer;
@@ -58,20 +49,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  &:hover:not(:disabled) {
-    background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
-  }
+.tz-pagination-nav:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--first-color) 20%, var(--background-color));
+}
 
-  &:active:not(:disabled) {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-pagination-nav:active:not(:disabled),
+.tz-pagination-button:active:not(:disabled) {
+  background-color: var(--first-color);
+  color: white;
+}
 
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
+.tz-pagination-nav:disabled,
+.tz-pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .tz-pagination-ellipsis {

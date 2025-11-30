@@ -5,10 +5,10 @@ export default {
   "📖 Documentation": () => {
     return (
       <div className="tz-doc">
-        <h1>Grid</h1>
+        <h1>Les grilles</h1>
         <p>Le composant Grid permet d'afficher des éléments sous forme de grille avec des cartes interactives.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -52,7 +52,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<div class="tz-grid cols-3">
   <div class="tz-grid-item">
     <span class="tz-grid-item-icon material-symbols-outlined">folder</span>

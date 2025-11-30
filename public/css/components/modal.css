@@ -63,15 +63,15 @@
   justify-content: center;
   transition: all 75ms ease;
   border-radius: 4px;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-modal-close:hover {
+  background-color: var(--hover-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-modal-close:active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-modal-body {

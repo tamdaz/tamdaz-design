@@ -1,0 +1,92 @@
+.tz-accordion {
+  width: 100%;
+  max-width: 600px;
+}
+
+.tz-accordion-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-color: var(--hover-color);
+}
+
+.tz-accordion-header {
+  width: 100%;
+  background-color: var(--hover-color);
+  border: none;
+  padding: 18px 24px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+}
+
+.tz-accordion-header:hover {
+  background-color: var(--secondary-color);
+}
+
+.tz-accordion-header.active {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
+
+.tz-accordion-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  fill: var(--text-color);
+  flex-shrink: 0;
+}
+
+.tz-accordion-header.active .tz-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.tz-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 24px;
+  background-color: var(--hover-color);
+}
+
+.tz-accordion-content.open {
+  max-height: 300px;
+  padding: 8px 24px;
+}
+
+.tz-accordion-content p {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 1.15rem;
+}
+
+/* Bordered Accordion */
+.tz-accordion.bordered .tz-accordion-item {
+  border: 2px solid var(--first-color);
+  background-color: transparent;
+}
+
+.tz-accordion.bordered .tz-accordion-header {
+  background-color: transparent;
+}
+
+.tz-accordion.bordered .tz-accordion-header:hover {
+  background-color: var(--hover-color);
+}
+
+.tz-accordion.bordered .tz-accordion-header.active {
+  background-color: transparent;
+  border-bottom: 2px solid var(--first-color);
+}
+
+.tz-accordion.bordered .tz-accordion-content {
+  background-color: transparent;
+}

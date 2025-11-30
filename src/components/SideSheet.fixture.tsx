@@ -8,7 +8,7 @@ export default {
         <h1>Side Sheet</h1>
         <p>Le composant Side Sheet affiche un panneau latéral qui glisse depuis le côté de l'écran, idéal pour les formulaires et informations additionnelles.</p>
 
-        <h2>Classes CSS</h2>
+        <h2>Les classes CSS</h2>
         <table className="tz-doc-table">
           <thead>
             <tr>
@@ -68,7 +68,7 @@ export default {
           </tbody>
         </table>
 
-        <h2>Exemples de code HTML</h2>
+        <h2>Les exemples de code HTML</h2>
         <pre className="tz-code-block">{`<!-- Mode Overlay (par défaut) -->
 <div class="tz-sidesheet-overlay open" onclick="closeSideSheet()"></div>
 

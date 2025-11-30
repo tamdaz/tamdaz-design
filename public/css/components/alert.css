@@ -71,10 +71,10 @@
   border-radius: 4px;
   flex-shrink: 0;
   transition: all 75ms ease;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-alert-close:hover {
+  background-color: var(--hover-color);
 }
 
 .tz-alert.filled {

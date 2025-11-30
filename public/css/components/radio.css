@@ -49,11 +49,7 @@
   box-shadow: 0 0 0 3px var(--first-color);
 }
 
-.tz-radio-input:disabled + .tz-radio-circle {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
+.tz-radio-input:disabled + .tz-radio-circle,
 .tz-radio-input:disabled ~ .tz-radio-label {
   opacity: 0.5;
   cursor: not-allowed;

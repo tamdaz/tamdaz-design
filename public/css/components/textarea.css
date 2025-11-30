@@ -11,25 +11,25 @@
   min-height: 120px;
   box-sizing: border-box;
   resize: vertical;
+}
 
-  &::placeholder {
-    color: var(--text-color);
-    opacity: 0.5;
-  }
+.tz-textarea::placeholder {
+  color: var(--text-color);
+  opacity: 0.5;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-textarea:hover {
+  background-color: var(--hover-color);
+}
 
-  &:focus {
-    border-width: 4px;
-    background-color: var(--hover-color);
-  }
+.tz-textarea:focus {
+  border-width: 4px;
+  background-color: var(--hover-color);
+}
 
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
+.tz-textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .tz-textarea.no-resize {
@@ -47,5 +47,4 @@
 
 .tz-textarea.error:focus {
   border-width: 4px;
-  padding: 10px 22px;
 }

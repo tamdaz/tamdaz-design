@@ -12,35 +12,38 @@
 @import "colors/purple.css";
 @import "colors/slate.css";
 
+@import "components/accordion.css";
+@import "components/alert.css";
+@import "components/badge.css";
+@import "components/breadcrumb.css";
 @import "components/button.css";
 @import "components/card.css";
-@import "components/logo.css";
-@import "components/navbar.css";
-@import "components/dropdown.css";
-@import "components/input.css";
-@import "components/textarea.css";
 @import "components/chip.css";
-@import "components/slider.css";
-@import "components/switch.css";
-@import "components/tooltip.css";
-@import "components/badge.css";
+@import "components/documentation.css";
+@import "components/dropdown.css";
+@import "components/dropzone.css";
+@import "components/grid.css";
+@import "components/input.css";
+@import "components/layout.css";
+@import "components/list.css";
+@import "components/logo.css";
+@import "components/menu.css";
 @import "components/modal.css";
-@import "components/alert.css";
-@import "components/snackbar.css";
-@import "components/breadcrumb.css";
-@import "components/sidesheet.css";
+@import "components/navbar.css";
+@import "components/pagination.css";
+@import "components/progress.css";
 @import "components/radio.css";
 @import "components/searchbar.css";
-@import "components/typography.css";
-@import "components/documentation.css";
+@import "components/sidesheet.css";
+@import "components/slider.css";
+@import "components/snackbar.css";
 @import "components/stepper.css";
-@import "components/list.css";
-@import "components/grid.css";
-@import "components/pagination.css";
-@import "components/dropzone.css";
+@import "components/switch.css";
+@import "components/table-of-contents.css";
 @import "components/table.css";
-@import "components/progress.css";
-@import "components/layout.css";
+@import "components/textarea.css";
+@import "components/tooltip.css";
+@import "components/typography.css";
 
 @font-face {
   font-family: "Adwaita Sans";
@@ -100,7 +103,13 @@ body {
   color: var(--text-color);
 
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+
+@supports (scrollbar-width: auto) {
+  * {
+    scrollbar-color: var(--secondary-color) var(--first-color);
+  }
 }
 
 #root {

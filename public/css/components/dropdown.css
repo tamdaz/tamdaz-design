@@ -15,10 +15,10 @@
   align-items: center;
   gap: 8px;
   font-family: "Adwaita Sans", sans-serif;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-dropdown-toggle:hover {
+  background-color: var(--hover-color);
 }
 
 .tz-dropdown-toggle::after {
@@ -62,15 +62,15 @@
   text-align: left;
   font-family: "Adwaita Sans", sans-serif;
   transition: background-color 75ms ease;
+}
 
-  &:hover {
-    background-color: var(--hover-color);
-  }
+.tz-dropdown-item:hover {
+  background-color: var(--hover-color);
+}
 
-  &:active {
-    background-color: var(--first-color);
-    color: white;
-  }
+.tz-dropdown-item:active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 .tz-dropdown-divider {
